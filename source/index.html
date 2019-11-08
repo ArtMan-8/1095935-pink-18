@@ -7,29 +7,25 @@
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
-  <header class="header-page">
-    <nav class="nav-main">
-      <ul class="nav-main__list ">
-        <li class="nav-main__item">
-          <a class="nav-main__logo">
-            <img src="https://via.placeholder.com/75x22" alt="Логотип Пинк" width="75" height="22">
-          </a>
-        </li>
-        <li class="nav-main__item">
-          <button>
-            <img src="https://via.placeholder.com/24x24" alt="Меню" width="24" height="24">
-          </button>
-        </li>
+  <header class="page-header">
+    <a class="page-header__logo-link">
+      <img class="page-header__logo-img" src="https://via.placeholder.com/75x22" alt="Логотип Пинк" width="75" height="22">
+    </a>
+
+    <nav class="page-header__nav nav-main">
+      <ul class="nav-main__list">
+        <li class="nav-main__item"><a class="nav-main__link" href="#">Главная</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="photo.html">Фотографии</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="form.html">Конкурс</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
       </ul>
 
-      <ul class="nav-main__list">
-        <li class="nav-main__link"><a href="#">Главная</a></li>
-        <li class="nav-main__link"><a href="photo.html">Фотографии</a></li>
-        <li class="nav-main__link"><a href="form.html">Конкурс</a></li>
-        <li class="nav-main__link"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-      </ul>
+      <button class="nav-main__toggle" type="button">
+        <img src="https://via.placeholder.com/24x24" alt="меню" width="24" height="24">
+      </button>
     </nav>
   </header>
+
 
 </body>
 </html>
