@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo-link">
+      <img class="page-header__logo-img" src="https://via.placeholder.com/75x22" alt="Логотип Пинк" width="75" height="22">
+    </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <nav class="page-header__nav nav-main">
+      <ul class="nav-main__list">
+        <li class="nav-main__item nav-main__item--current"><a class="nav-main__link" href="#">Главная</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="photo.html">Фотографии</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="form.html">Конкурс</a></li>
+        <li class="nav-main__item"><a class="nav-main__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+      </ul>
 
-  </body>
+      <button class="nav-main__toggle" type="button">меню</button>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Pink - приложение для раскраски фотографий</h1>
+
+    <section class="app">
+      <h2 class="app__header">Взгляни на жизнь иначе!</h2>
+
+      <div class="app__downloads">
+        <a class="app__download btn" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
+
+        <div class="app__list">
+          <a class="app__link app__link--apple" href="https://www.apple.com/ios/app-store/">Скачать на apple</a></li>
+          <a class="app__link app__link--android" href="https://play.google.com/store">Скачать на android</a></li>
+          <a class="app__link app__link--windows" href="https://www.microsoft.com/store/apps/">Скачать на windows</a></li>
+        </div>
+
+        <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__title">
+        <h2 class="advantages__header">Устали от серости мегаполиса?</h2>
+        <p class="advantages__text">Нам есть, что вам предложить!</p>
+      </div>
+
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__subheader">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__subheader">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__subheader">Заводит новых друзей</h3>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <img src="https://via.placeholder.com/157x320" alt="Изображение приложения" width="157" height="320">
+        </li>
+      </ul>
+    </section>
+
+  </main>
+</body>
 </html>
