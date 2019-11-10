@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Пинк - отправить фотографию</title>
@@ -25,9 +25,124 @@
   </header>
 
   <main class="page-main">
-    <div class="page-main__title">
-      <h1 class="page-main__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
+    <h1 class="page-main__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+    <p class="page-main__offer">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      <span class="page-main__invite-fill">Пожалуйста, заполните форму ниже:</span>
+    </p>
+
+    <form class="history-form" action="https://echo.htmlacademy.ru" method="GET">
+      <fieldset class="history-form__fieldset history-form__fieldset--user">
+        <legend class="visually-hidden">Укажите ваши фамилию, имя, отчесвто</legend>
+
+        <ul class="history-form__user-list">
+          <li class="history-form__user-item">
+            <label class="history-form__label">Фамилия:
+              <input class="history-form__input-text" type="text" id="user-surname" name="user-surname" required placeholder="Укажите фамилию *">
+            </label>
+          </li>
+          <li class="history-form__user-item">
+            <label class="history-form__label">Имя:
+              <input class="history-form__input-text" type="text" id="user-name" name="user-name" required placeholder="Введите ваше имя *">
+            </label>
+          </li>
+          <li class="history-form__user-item">
+            <label class="history-form__label">Отчество:
+              <input class="history-form__input-text" type="text" id="user-patronymic" name="user-patronymic" placeholder="Ну и отчество тоже">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="history-form__fieldset history-form__fieldset--achievement">
+        <legend class="history-form__legend">Ваши безбашенные достижения в путешествии</legend>
+
+        <ul class="history-form__achievement-list">
+          <li class="history-form__achievement-item">
+            <label class="history-form__label">
+              <input class="history-form__input-check" type="checkbox" id="achievement-1" name="achievement-1" checked>Сделал селфи с акулой
+            </label>
+          </li>
+          <li class="history-form__achievement-item">
+            <label class="history-form__label">
+              <input class="history-form__input-check" type="checkbox" id="achievement-2" name="achievement-2" checked>Обгорел на пляже
+            </label>
+          </li>
+          <li class="history-form__achievement-item">
+            <label class="history-form__label">
+              <input class="history-form__input-check" type="checkbox" id="achievement-3" name="achievement-3">Видел Чака Норриса
+            </label>
+          </li>
+          <li class="history-form__achievement-item">
+            <label class="history-form__label">
+              <input class="history-form__input-check" type="checkbox" id="achievement-4" name="achievement-4">Накупил сувениров
+            </label>
+          </li>
+          <li class="history-form__achievement-item">
+            <label class="history-form__label">
+              <input class="history-form__input-check" type="checkbox" id="achievement-5" name="achievement-5" checked>Удержал башню
+            </label>
+          </li>
+          <li class="history-form__achievement-item">
+            <label class="history-form__label">
+              <input class="history-form__input-check" type="checkbox" id="achievement-6" name="achievement-6">Разгромил отель
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="history-form__fieldset history-form__fieldset--contacts">
+        <legend class="visually-hidden">Укажите ваши номер телефона и email</legend>
+
+        <ul class="history-form__contacts-list">
+          <li class="history-form__contacts-item">
+            <label class="history-form__label">Номер телефона:
+              <input class="history-form__input-text" type="text" id="contacts-tel" name="contacts-tel" placeholder="Номер, пожалуйста">
+            </label>
+          </li>
+          <li class="history-form__contacts-item">
+            <label class="history-form__label">Адрес почты:
+              <input class="history-form__input-text" type="text" id="contacts-email" name="contacts-email" required placeholder="Введите почту *">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="history-form__fieldset history-form__fieldset--app">
+        <legend class="history-form__legend">С каким приложением путешествовали?</legend>
+
+        <ul class="history-form__app-list">
+          <li class="history-form__app-item">
+            <label class="history-form__label">
+              <input class="history-form__input-text" type="radio" id="app-ios" name="app" value="app-ios" checked>Pink для iOS
+            </label>
+          </li>
+          <li class="history-form__app-item">
+            <label class="history-form__label">
+              <input class="history-form__input-text" type="radio" id="app-android" name="app" value="app-android">Pink на Android
+            </label>
+          </li>
+          <li class="history-form__app-item">
+            <label class="history-form__label">
+              <input class="history-form__input-text" type="radio" id="app-windows" name="app" value="app-windows">Windows Phone
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="history-form__fieldset history-form__fieldset--review">
+        <legend class="visually-hidden">Напишите свою историю</legend>
+
+        <label class="history-form__label">Опишите свои эмоции
+          <textarea class="history-form__textarea" name="review" id="review" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </label>
+      </fieldset>
+
+      <div class="history-form__controls">
+        <button  class="history-form__submit" type="submit">Отправить форму</button>
+        <p class="history-form__footnote">* — обязательные поля</p>
+      </div>
+    </form>
   </main>
 
   <footer class="page-footer">
@@ -54,5 +169,11 @@
       </a>
     </div>
   </footer>
+
+  <section class="modal-ups">
+    <h2 class="modal-ups__header">Что-то пошло не так!</h2>
+    <p class="modal-ups__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <a class="modal-ups__btn" href="#">ok</a>
+  </section>
 </body>
 </html>
