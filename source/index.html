@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Пинк</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -70,28 +72,27 @@
       <h2 class="visually-hidden">Отзывы пользователей о приложении Pink</h2>
 
       <ul class="reviews__list">
-        <li class="reviews__item">
+        <li class="reviews__item reviews__item--one">
           <h3 class="reviews__user">Николай Петров</h3>
           <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
         </li>
-      </ul>
-      <ul class="reviews__list">
-        <li class="reviews__item">
+        <li class="reviews__item reviews__item--two">
           <h3 class="reviews__user">Николай Петров</h3>
           <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
         </li>
-      </ul>
-      <ul class="reviews__list">
-        <li class="reviews__item">
+        <li class="reviews__item reviews__item--three">
           <h3 class="reviews__user">Николай Петров</h3>
           <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
         </li>
       </ul>
 
-      <div class="reviews__pagination pagination">
-        <span class="pagination__item pagination__item--current"></span>
-        <span class="pagination__item"></span>
-        <span class="pagination__item"></span>
+      <input class="visually-hidden reviews__radio reviews__radio--one" type="radio" id="review-1" name="toggle" checked>
+      <input class="visually-hidden reviews__radio reviews__radio--two" type="radio" id="review-2" name="toggle">
+      <input class="visually-hidden reviews__radio reviews__radio--three" type="radio" id="review-3" name="toggle">
+      <div class="reviews__controls">
+        <label class="reviews__toggle reviews__toggle--one" for="review-1" aria-label="Преимущества дорого">Первый отзыв</label>
+        <label class="reviews__toggle reviews__toggle--two" for="review-2" aria-label="Преимущества точно">Второй отзыв</label>
+        <label class="reviews__toggle reviews__toggle--three" for="review-3" aria-label="Преимущества хардкор">Третий отзыв</label>
       </div>
     </section>
 
