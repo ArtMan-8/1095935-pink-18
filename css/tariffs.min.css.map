@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../source/sass/blocks/tariffs.scss"
-    ],
-    "names": [],
-    "file": "tariffs.min.css"
-}

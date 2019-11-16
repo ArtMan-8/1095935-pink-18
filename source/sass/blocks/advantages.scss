@@ -10,6 +10,7 @@
 .advantages__header,
 .advantages__text {
   margin: 0;
+
   @include text(24px, 300, 30px, $color-main-text);
   text-align: center;
 }
@@ -60,10 +61,12 @@
 .advantages__subheader {
   margin: 0;
   margin-bottom: 11px;
+
   @include text(18px, 700, 24px, #000000);
 }
 
 .advantages__description {
   margin: 0;
+
   @include text(14px, 400, 24px, $color-main-text);
 }

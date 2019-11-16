@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,gBAAgB,EAAE,OAAO;CAC1B;;AAED,AAAA,uBAAuB,CAAC;EACtB,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,OAAO;EACf,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,sBAAsB,CAAC;EACrB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,cAAc;CACvB",
-    "sources": [
-        "../source/sass/blocks/page-header.scss"
-    ],
-    "names": [],
-    "file": "page-header.css"
-}

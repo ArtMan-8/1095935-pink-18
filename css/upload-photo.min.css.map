@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../source/sass/blocks/upload-photo.scss"
-    ],
-    "names": [],
-    "file": "upload-photo.min.css"
-}

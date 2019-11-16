@@ -1,6 +1,12 @@
+.nav__main {
+  width: 320px;
+  margin: auto;
+}
+
 .nav-main__list {
   padding: 0;
   margin: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
@@ -13,6 +19,7 @@
 
 .nav-main__link {
   display: block;
+
   @include text(18px, 700, 1.78, #ffffff);
   text-transform: uppercase;
   text-decoration: none;

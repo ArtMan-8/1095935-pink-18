@@ -1,6 +1,5 @@
 @import "variables";
 @import "mixins";
-
 @import "fonts";
 
 body {
@@ -23,17 +22,14 @@ body {
   padding: 0;
   border: 0;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 @import "blocks/page-header.scss";
 @import "blocks/nav-main.scss";
-
 @import "blocks/page-main.scss";
 @import "blocks/app.scss";
 @import "blocks/advantages.scss";
 @import "blocks/acrticle.scss";
-
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";

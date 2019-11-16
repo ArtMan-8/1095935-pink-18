@@ -1,3 +1,8 @@
+.page-main {
+  width: 320px;
+  margin: auto;
+}
+
 .page-main__intro {
   position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -31,6 +36,7 @@
   margin: 0;
   padding: 24px;
   text-align: center;
+
   @include text(24px, 300, normal, #ffffff);
 }
 
@@ -40,5 +46,6 @@
   padding-top: 45px;
   margin-bottom: 25px;
   text-align: center;
+
   @include text(14px, 400, 30px, $color-main-text);
 }

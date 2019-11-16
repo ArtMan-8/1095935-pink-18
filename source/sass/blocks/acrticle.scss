@@ -3,10 +3,6 @@
   margin: 0 auto;
   margin-bottom: 20px;
   width: 280px;
-
-  &--panorama {
-    width: 100%;
-  }
 }
 
 .article__link {
@@ -17,14 +13,19 @@
 .article__img {
   display: block;
   background-color: #cccccc;
+
+  &--panorama {
+    @include bg-stretch;
+  }
 }
 
 .article__type {
   position: absolute;
   display: block;
   top: 0;
-  right: 20px;
+  right: 0;
   padding: 6px 20px;
+
   @include text(12px, 700, 24px, #ffffff);
   text-transform: uppercase;
   background-color: $color-main;
@@ -43,33 +44,29 @@
   }
 }
 
-.article__title {
-
-}
-
 .article__author {
   margin: 0;
+
   @include text(14px, 700, 24px, $color-main-text);
 }
 
 .article__time {
   text-transform: uppercase;
+
   @include text(12px, 300, 24px, $color-main-text);
 }
 
 .article__text {
   margin: 0;
   margin-bottom: 10px;
+
   @include text(14px, 300, 24px, $color-main-text);
-}
-
-.article__like {
-
 }
 
 .article__like-btn {
   position: relative;
   padding-left: 30px;
+
   @include text(12px, 400, 24px, $color-main);
   text-transform: uppercase;
   text-decoration: none;

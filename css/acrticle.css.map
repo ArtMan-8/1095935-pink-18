@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../source/sass/blocks/acrticle.scss"
-    ],
-    "names": [],
-    "file": "acrticle.css"
-}
