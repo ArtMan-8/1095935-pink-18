@@ -3,12 +3,12 @@
 }
 
 .page-header__logo-link {
-  display: block;
+  display: inline-block;
   cursor: pointer;
-  min-height: 66px;
+  height: 66px;
 }
 
-.page-header__logo-img {
+.page-header__logo-svg {
   width: 75px;
   height: 22px;
   margin: 22px 20px 18px;
