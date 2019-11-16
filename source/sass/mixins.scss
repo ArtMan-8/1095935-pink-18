@@ -1,0 +1,17 @@
+@mixin text($text-size, $text-weight, $text-height, $text-color) {
+  font-size: $text-size;
+  font-weight: $text-weight;
+  line-height: $text-height;
+  color: $text-color;
+}
+
+@mixin btn($padding) {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: $padding;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
+}

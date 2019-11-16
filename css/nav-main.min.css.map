@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../source/sass/blocks/nav-main.scss"
+    ],
+    "names": [],
+    "file": "nav-main.min.css"
+}
