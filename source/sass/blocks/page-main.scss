@@ -1,13 +1,35 @@
 .page-main__intro {
+  position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -69px;
+
+  &--index {
+    background-position: center -69px;
+  }
+
+  &--index::before {
+    display: block;
+    content: "";
+    height: 393px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  &--photo {
+    background-position: center -69px;
+    padding-bottom: 53px;
+  }
+
+  &--form {
+    background-position: center -69px;
+    padding-bottom: 20px;
+  }
 }
 
 .page-main__header {
   margin: 0;
   padding: 24px;
-  padding-bottom: 44px;
   text-align: center;
   @include text(24px, 300, normal, #ffffff);
 }
