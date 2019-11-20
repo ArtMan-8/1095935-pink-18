@@ -156,33 +156,32 @@
     </section>
 
     <section class="contacts">
-      <div>
-        <h2 class="contacts__header">Остались вопросы?</h2>
-        <p class="contacts__text">Свяжитесь с нами!</p>
+      <div class="contacts__inner">
+        <div class="contacts__title">
+          <h2 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h2>
+        </div>
+
+        <div class="contacts__types">
+          <div class="contacts__item">
+            <h3 class="contacts__subheader">Звоните:</h3>
+            <a class="contacts__way" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__item">
+            <h3 class="contacts__subheader">Пишите:</h3>
+            <a class="contacts__way" href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item">
+            <h3 class="contacts__subheader">Приезжайте в гости:</h3>
+            <address class="contacts__way">ул. Большая Конюшенная, 19/8</address>
+          </div>
+        </div>
       </div>
 
-      <div class="contacts__types">
-        <div class="contacts__item">
-          <h3 class="contacts__title">Звоните:</h3>
-          <a class="contacts__way" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </div>
-        <div class="contacts__item">
-          <h3 class="contacts__title">Пишите:</h3>
-          <a class="contacts__way" href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contacts__item">
-          <h3 class="contacts__title">Приезжайте в гости:</h3>
-          <address class="contacts__way">ул. Большая Конюшенная, 19/8</address>
-        </div>
-      </div>
-
-      <div class="contacts__map">
-        <img class="contacts__map-img" src="https://via.placeholder.com/320x645" alt="Карта, мы находимся на ул. Большая Конюшенная, 19/8" width="320" height="645">
-      </div>
+      <div id="map" class="contacts__map"></div>
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--index">
     <a href="index.html" class="page-footer__logo-link">
       <svg class="page-footer__logo-svg" xmlns="http://www.w3.org/2000/svg" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
         <g>

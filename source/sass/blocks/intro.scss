@@ -39,6 +39,7 @@
 .intro__header {
   width: 230px;
   text-align: center;
+
   @include text(24px, 300, 28px, #ffffff);
 }
 

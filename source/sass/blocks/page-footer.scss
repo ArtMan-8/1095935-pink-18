@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &--index {
+    display: none;
+  }
 }
 
 .page-footer__logo-link {
