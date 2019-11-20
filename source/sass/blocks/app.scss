@@ -2,16 +2,6 @@
   background-color: #17212d;
 }
 
-.app__header {
-  position: absolute;
-  top: 0;
-  margin: 0;
-  padding: 20px 40px;
-
-  @include text(24px, 300, 28px, #ffffff);
-  text-align: center;
-}
-
 .app__downloads {
   text-align: center;
   width: 280px;
@@ -31,6 +21,7 @@
 
 .app__list {
   margin: auto;
+  margin-bottom: 9px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +38,6 @@
 
   &--apple {
     background-image: url("../img/logo-apple.svg");
-    background-size: 47px 56px;
   }
 
   &--android {
@@ -60,9 +50,8 @@
 }
 
 .app__text {
-  margin: 10px;
-  margin-bottom: 0;
-  padding-bottom: 29px;
+  margin: 0;
+  padding-bottom: 30px;
 
   @include text(14px, 300, 24px, #ffffff);
 }

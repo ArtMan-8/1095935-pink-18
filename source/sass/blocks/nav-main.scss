@@ -1,6 +1,6 @@
-.nav__main {
-  width: 320px;
-  margin: auto;
+.nav-main {
+  width: 100%;
+  margin-top: 4px;
 }
 
 .nav-main__list {
@@ -12,7 +12,6 @@
 }
 
 .nav-main__item {
-  margin-bottom: 1px;
   width: 100%;
   box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }
@@ -29,7 +28,7 @@
 
 .nav-main__toggle {
   position: absolute;
-  top: 20px;
+  top: 18px;
   right: 30px;
   font-size: 0;
   border: 0;
