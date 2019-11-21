@@ -1,0 +1,47 @@
+.contacts {
+  background-color: #ffffff;
+}
+
+.contacts__inner {
+  width: 280px;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 15px;
+}
+
+.contacts__title {
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contacts__header {
+  margin: 0;
+
+  @include text(24px, 300, normal, $color-main-text);
+}
+
+.contacts__subheader {
+  margin: 0;
+
+  @include text(18px, 700, normal, $color-main-text);
+}
+
+.contacts__way {
+  text-decoration: none;
+
+  @include text(24px, 300, normal, $color-main);
+}
+
+.contacts__map {
+  height: 200px;
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center top, center 95px, center bottom;
+  background-size: 100%, auto, auto;
+}

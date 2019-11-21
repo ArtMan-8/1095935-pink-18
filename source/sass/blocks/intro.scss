@@ -1,0 +1,54 @@
+.intro {
+  background-color: #17212d;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  &--index {
+    background-position: center -66px;
+  }
+
+  &--index::before {
+    display: block;
+    content: "";
+    width: 320px;
+    margin: auto;
+    height: 395px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  &--photo {
+    background-position: center -66px;
+    padding-bottom: 53px;
+  }
+
+  &--form {
+    background-position: center -66px;
+    padding-bottom: 20px;
+  }
+}
+
+.intro__inner {
+  position: relative;
+  width: 320px;
+  margin: auto;
+  background-color: #233343;
+}
+
+.intro__header {
+  width: 230px;
+  text-align: center;
+
+  @include text(24px, 300, 28px, #ffffff);
+}
+
+.intro__offer {
+  margin: 0;
+  padding: 24px;
+  padding-top: 45px;
+  margin-bottom: 25px;
+  text-align: center;
+
+  @include text(14px, 400, 30px, $color-main-text);
+}

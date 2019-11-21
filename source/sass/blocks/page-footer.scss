@@ -1,0 +1,14 @@
+.page-footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--index {
+    display: none;
+  }
+}
+
+.page-footer__logo-link {
+  margin-bottom: 30px;
+}
