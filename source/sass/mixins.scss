@@ -19,6 +19,8 @@
 @mixin bg-stretch {
   position: relative;
   width: 100vw;
+  min-width: 320px;
+  height: auto;
   left: 50%;
   right: 50%;
   margin-left: -50vw;

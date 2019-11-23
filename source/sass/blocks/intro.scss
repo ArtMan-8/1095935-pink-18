@@ -46,10 +46,11 @@
 }
 
 .intro__offer {
-  margin: 0;
-  padding: 24px;
+  margin: auto;
+  width: 260px;
+  padding: 20px;
   padding-top: 45px;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   text-align: center;
 
   @include text(14px, 400, 30px, $color-main-text);
