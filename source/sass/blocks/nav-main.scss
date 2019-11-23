@@ -28,17 +28,17 @@
 
 .nav-main__toggle {
   position: absolute;
-  top: 18px;
-  right: 30px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  top: 16px;
+  right: 18px;
   font-size: 0;
   border: 0;
-  width: 24px;
-  height: 24px;
   background-color: transparent;
   cursor: pointer;
-}
 
-.nav-main__toggle span {
   &::before,
   &::after {
     display: block;

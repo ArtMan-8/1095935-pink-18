@@ -20,12 +20,14 @@
 
   &--photo {
     background-position: center -66px;
-    padding-bottom: 53px;
+    padding-top: 30px;
+    padding-bottom: 84px;
   }
 
   &--form {
     background-position: center -66px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 56px;
   }
 }
 
@@ -33,10 +35,10 @@
   position: relative;
   width: 320px;
   margin: auto;
-  background-color: #233343;
 }
 
 .intro__header {
+  margin: auto;
   width: 230px;
   text-align: center;
 
