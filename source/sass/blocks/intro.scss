@@ -44,14 +44,3 @@
 
   @include text(24px, 300, 28px, #ffffff);
 }
-
-.intro__offer {
-  margin: auto;
-  width: 290px;
-  padding: 20px 15px 0;
-  padding-top: 45px;
-  // margin-bottom: 29px;
-  text-align: center;
-
-  @include text(14px, 400, 30px, $color-main-text);
-}
