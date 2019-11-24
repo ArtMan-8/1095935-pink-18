@@ -11,4 +11,18 @@
   height: 22px;
   cursor: pointer;
   margin: 22px 20px;
+
+}
+
+.page-header__logo-svg {
+  fill: #ffffff;
+
+  &:hover {
+    fill: $color-main;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }

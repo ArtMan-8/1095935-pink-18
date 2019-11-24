@@ -58,12 +58,22 @@
   margin-bottom: 16px;
   padding-left: 22px;
   border: 2px solid #e5e5e5;
+
   @include text(18px, 400, 30px, $color-main-text);
+
+  &:hover {
+    border-color: $color-main-text;
+  }
+
+  &:active {
+    border-color: $color-main;
+  }
 }
 
 .history-form__h2 {
   margin: 0;
   padding: 0 20px 20px;
+
   @include text(14px, 400, 18px, $color-main);
   text-align: center;
   text-transform: uppercase;
@@ -107,6 +117,14 @@
     height: 35px;
     border: 2px solid #e5e5e5;
     background-color: #ffffff;
+  }
+
+  &:hover::before {
+    border-color: $color-main-text;
+  }
+
+  &:active::before {
+    border-color: $color-main;
   }
 }
 
@@ -157,12 +175,26 @@
 
   @include text(18px, 700, 30px, #ffffff);
   text-transform: uppercase;
-  text-align: center;
-  padding-top: 14px;
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
   border-radius: 3px;
   margin-bottom: 20px;
+
+  &:hover {
+    border-color: #1c9b5e;
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: #1c9b5e;
+    background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
 }
 
 .history-form__footnote {

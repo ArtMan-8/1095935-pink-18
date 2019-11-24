@@ -22,12 +22,23 @@
 
 .upload-form__label-tool {
   font-size: 0;
-  fill: rgba(40, 54, 69, 0.3);
   width: 48px;
   height: 44px;
 
   display: flex;
   align-items: center;
+}
+
+.upload-form__tool-svg {
+  fill: rgba(40, 54, 69, 0.3);
+
+  &:hover {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+
+  &:active {
+    fill: $color-main;
+  }
 
   &--current {
     fill: $color-main;
@@ -62,27 +73,52 @@
   border-radius: 50%;
   margin-left: 80%;
   cursor: pointer;
+
+  &:active {
+    background-color: $color-main;
+  }
 }
 
 .upload-form__btns {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 35px 0 29px;
-  margin: auto;
-  width: 280px;
+  text-align: center;
 }
 
 .upload-form__btn {
   overflow: hidden;
 
   @include btn(280px, 55px);
+  display: block;
+  margin: auto;
 
   @include text(18px, bold, 18px, rgba(40, 54, 69, 0.1));
   margin-bottom: 12px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 28px;
 
-  &--current {
+  &--submit {
     color: $color-main;
     border-color: $color-main;
+  }
+
+  &--submit:hover {
+    color: #ffffff;
+    background-color: $color-main;
+  }
+
+  &--submit:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--reset:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &--reset:active {
+    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
+    background-color:$color-main-text;
   }
 }

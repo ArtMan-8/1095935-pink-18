@@ -18,6 +18,15 @@
   border-radius: 30px;
   margin-bottom: 25px;
   padding-top: 14px;
+
+  &:hover {
+    color: $color-main;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .app__list {

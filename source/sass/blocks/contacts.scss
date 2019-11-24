@@ -36,6 +36,16 @@
   text-decoration: none;
 
   @include text(24px, 300, normal, $color-main);
+
+  &--mail:hover {
+    color: $color-main-text;
+    text-decoration: underline;
+  }
+
+  &--mail:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
 }
 
 .contacts__map {
