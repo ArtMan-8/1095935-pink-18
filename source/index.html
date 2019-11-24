@@ -111,46 +111,85 @@
     <section class="tariffs">
       <h2 class="visually-hidden">Тарифы</h2>
 
-      <table class="tariffs__table">
-        <tr class="tariffs__table-header">
-          <td class="visually-hidden">Опции</td>
-          <th class="tariffs__header">
-            <div class="tariffs__title">База</div>
-            <span class="tariffs__cost">1,99 usd</span>
-          </th>
-          <th class="tariffs__header tariffs__header--hit">
-            <div class="tariffs__title">Стандарт</div>
-            <span class="tariffs__cost">3,99 usd</span>
-          </th>
-          <th class="tariffs__header">
-            <div class="tariffs__title">Анлим</div>
-            <span class="tariffs__cost">9,99 usd</span>
-          </th>
-        </tr>
-        <tr class="tariffs__table-row">
-          <td class="tariffs__feature">Розовый фильтр</td>
-          <td class="tariffs__availability tariffs__availability--on">есть</td>
-          <td class="tariffs__availability tariffs__availability--on">есть</td>
-          <td class="tariffs__availability tariffs__availability--on">есть</td>
-        </tr>
-        <tr class="tariffs__table-row">
-          <td class="tariffs__feature">Смайлик</td>
-          <td class="tariffs__availability tariffs__availability--off">нет</td>
-          <td class="tariffs__availability tariffs__availability--on">есть</td>
-          <td class="tariffs__availability tariffs__availability--on">есть</td>
-        </tr>
-        <tr class="tariffs__table-row">
-          <td class="tariffs__feature">Комментарии</td>
-          <td class="tariffs__availability tariffs__availability--off">нет</td>
-          <td class="tariffs__availability tariffs__availability--off">нет</td>
-          <td class="tariffs__availability tariffs__availability--on">есть</td>
-        </tr>
-      </table>
+      <div class="tariffs__inner">
+        <table class="tariffs__table">
+          <colgroup>
+            <col class="tariffs__features">
+            <col class="tariffs__show" span="3">
+          </colgroup>
 
-      <div class="tariffs__controls controls">
-        <a class="controls__toggle controls__toggle--one" href="#"></a>
-        <a class="controls__toggle controls__toggle--two controls__toggle--current" href="#"></a>
-        <a class="controls__toggle controls__toggle--three" href="#"></a>
+          <thead class="tariffs__table-header">
+            <tr class="tariffs__table-row">
+              <th></td>
+              <th class="tariffs__header">
+                <div class="tariffs__title">База</div>
+                <span class="tariffs__cost">1,99 usd</span>
+              </th>
+              <th class="tariffs__header tariffs__header--hit">
+                <div class="tariffs__title">Стандарт</div>
+                <span class="tariffs__cost">3,99 usd</span>
+              </th>
+              <th class="tariffs__header">
+                <div class="tariffs__title">Анлим</div>
+                <span class="tariffs__cost">9,99 usd</span>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="tariffs__table-body">
+            <tr class="tariffs__table-row">
+              <th class="tariffs__feature">Розовый фильтр</th>
+              <td class="tariffs__item">
+                <span class="tariffs__name">Розовый фильтр</span>
+                <span class="tariffs__availability tariffs__availability--on">есть</span>
+              </td>
+              <td class="tariffs__item">
+                <span class="tariffs__name">Розовый фильтр</span>
+                <span class="tariffs__availability tariffs__availability--on">есть</span>
+              </td>
+              <td class="tariffs__item">
+                <span class="tariffs__name">Розовый фильтр</span>
+                <span class="tariffs__availability tariffs__availability--on">есть</span>
+              </td>
+            </tr>
+            <tr class="tariffs__table-row">
+              <th class="tariffs__feature">Смайлик</th>
+              <td class="tariffs__item">
+                <span class="tariffs__name">Смайлик</span>
+                <span class="tariffs__availability tariffs__availability--off">нет</span>
+              </td>
+              <td class="tariffs__item">
+                <span class="tariffs__name">Смайлик</span>
+                <span class="tariffs__availability tariffs__availability--on">есть</span>
+              </td>
+              <td class="tariffs__item">
+                <span class="tariffs__name">Смайлик</span>
+                <span class="tariffs__availability tariffs__availability--on">есть</span>
+              </td>
+            </tr>
+            <tr class="tariffs__table-row">
+              <th class="tariffs__feature">Комментарии</th>
+              <td class="tariffs__item">
+                <span class="tariffs__name">Комментарии</span>
+                <span class="tariffs__availability tariffs__availability--off">нет</span>
+              </td>
+              <td class="tariffs__item">
+                <span class="tariffs__name">Комментарии</span>
+                <span class="tariffs__availability tariffs__availability--off">нет</span>
+              </td>
+              <td class="tariffs__item">
+                <span class="tariffs__name">Комментарии</span>
+                <span class="tariffs__availability tariffs__availability--on">есть</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="tariffs__controls controls">
+          <a class="controls__toggle controls__toggle--one" href="#"></a>
+          <a class="controls__toggle controls__toggle--two controls__toggle--current" href="#"></a>
+          <a class="controls__toggle controls__toggle--three" href="#"></a>
+        </div>
       </div>
     </section>
 
