@@ -15,6 +15,7 @@
 .upload-form__label-tools {
   padding: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -71,6 +72,8 @@
 }
 
 .upload-form__btn {
+  overflow: hidden;
+
   @include btn(280px, 55px);
 
   @include text(18px, bold, 18px, rgba(40, 54, 69, 0.1));
