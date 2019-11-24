@@ -37,123 +37,120 @@
 
   <main class="page-main">
     <div class="intro intro--form">
-      <h1 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="intro__inner">
+        <h1 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </div>
 
-    <p class="intro__offer">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      <span class="page-main__invite-fill">Пожалуйста, заполните форму ниже:</span>
+    <p class="intro__offer">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      <span class="visually-hidden page-main__invite-fill">Пожалуйста, заполните форму ниже:</span>
     </p>
 
     <form class="history-form" action="https://echo.htmlacademy.ru" method="GET">
       <fieldset class="history-form__fieldset history-form__fieldset--user">
-        <legend class="visually-hidden">Укажите ваши фамилию, имя, отчесвто</legend>
+        <div class="history-form__inner">
+          <legend class="visually-hidden">Укажите ваши фамилию, имя, отчесвто</legend>
 
-        <ul class="history-form__user-list">
-          <li class="history-form__user-item">
-            <label class="history-form__label">Фамилия:
-              <input class="history-form__input-text" type="text" id="user-surname" name="user-surname" required placeholder="Укажите фамилию *">
-            </label>
-          </li>
-          <li class="history-form__user-item">
-            <label class="history-form__label">Имя:
-              <input class="history-form__input-text" type="text" id="user-name" name="user-name" required placeholder="Введите ваше имя *">
-            </label>
-          </li>
-          <li class="history-form__user-item">
-            <label class="history-form__label">Отчество:
-              <input class="history-form__input-text" type="text" id="user-patronymic" name="user-patronymic" placeholder="Ну и отчество тоже">
-            </label>
-          </li>
-        </ul>
+          <ul class="history-form__user-list">
+            <li class="history-form__user-item">
+              <label for="user-surname" class="history-form__label-user">Фамилия:</label>
+              <input id="user-surname" class="history-form__input-user" type="text" name="user-surname" required placeholder="Укажите фамилию *">
+            </li>
+            <li class="history-form__user-item">
+              <label for="user-name" class="history-form__label-user">Имя:</label>
+              <input id="user-name" class="history-form__input-user" type="text" name="user-name" required placeholder="Введите ваше имя *">
+            </li>
+            <li class="history-form__user-item">
+              <label for="user-patronymic" class="history-form__label-user">Отчество:</label>
+              <input id="user-patronymic" class="history-form__input-user" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </div>
       </fieldset>
 
       <fieldset class="history-form__fieldset history-form__fieldset--achievement">
-        <legend class="history-form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <div class="history-form__inner">
+          <legend class="history-form__legend">Ваши безбашенные достижения в путешествии</legend>
 
-        <ul class="history-form__achievement-list">
-          <li class="history-form__achievement-item">
-            <label class="history-form__label">
-              <input class="history-form__input-check" type="checkbox" id="achievement-1" name="achievement-1" checked>Сделал селфи с акулой
-            </label>
-          </li>
-          <li class="history-form__achievement-item">
-            <label class="history-form__label">
-              <input class="history-form__input-check" type="checkbox" id="achievement-2" name="achievement-2" checked>Обгорел на пляже
-            </label>
-          </li>
-          <li class="history-form__achievement-item">
-            <label class="history-form__label">
-              <input class="history-form__input-check" type="checkbox" id="achievement-3" name="achievement-3">Видел Чака Норриса
-            </label>
-          </li>
-          <li class="history-form__achievement-item">
-            <label class="history-form__label">
-              <input class="history-form__input-check" type="checkbox" id="achievement-4" name="achievement-4">Накупил сувениров
-            </label>
-          </li>
-          <li class="history-form__achievement-item">
-            <label class="history-form__label">
-              <input class="history-form__input-check" type="checkbox" id="achievement-5" name="achievement-5" checked>Удержал башню
-            </label>
-          </li>
-          <li class="history-form__achievement-item">
-            <label class="history-form__label">
-              <input class="history-form__input-check" type="checkbox" id="achievement-6" name="achievement-6">Разгромил отель
-            </label>
-          </li>
-        </ul>
+          <ul class="history-form__achievement-list">
+            <li class="history-form__achievement-item">
+              <input id="achievement-1" class="visually-hidden history-form__input-achievement" type="checkbox" name="achievement-1" checked>
+              <label for="achievement-1" class="history-form__label-achievement">Сделал селфи с акулой</label>
+            </li>
+            <li class="history-form__achievement-item">
+              <input id="achievement-2" class="visually-hidden history-form__input-achievement" type="checkbox" name="achievement-2" checked>
+              <label for="achievement-2" class="history-form__label-achievement">Обгорел на пляже</label>
+            </li>
+            <li class="history-form__achievement-item">
+              <input id="achievement-3" class="visually-hidden history-form__input-achievement" type="checkbox" name="achievement-3">
+              <label for="achievement-3" class="history-form__label-achievement">Видел Чака Норриса</label>
+            </li>
+            <li class="history-form__achievement-item">
+              <input id="achievement-4" class="visually-hidden history-form__input-achievement" type="checkbox" name="achievement-4">
+              <label for="achievement-4" class="history-form__label-achievement">Накупил сувениров</label>
+            </li>
+            <li class="history-form__achievement-item">
+              <input id="achievement-5" class="visually-hidden history-form__input-achievement" type="checkbox" name="achievement-5" checked>
+              <label for="achievement-5" class="history-form__label-achievement">Удержал башню</label>
+            </li>
+            <li class="history-form__achievement-item">
+              <input id="achievement-6" class="visually-hidden history-form__input-achievement" type="checkbox" name="achievement-6">
+              <label for="achievement-6" class="history-form__label-achievement">Разгромил отель</label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
 
       <fieldset class="history-form__fieldset history-form__fieldset--contacts">
-        <legend class="visually-hidden">Укажите ваши номер телефона и email</legend>
+        <div class="history-form__inner">
+          <legend class="visually-hidden">Укажите ваши номер телефона и email</legend>
 
-        <ul class="history-form__contacts-list">
-          <li class="history-form__contacts-item">
-            <label class="history-form__label">Номер телефона:
-              <input class="history-form__input-text" type="text" id="contacts-tel" name="contacts-tel" placeholder="Номер, пожалуйста">
-            </label>
-          </li>
-          <li class="history-form__contacts-item">
-            <label class="history-form__label">Адрес почты:
-              <input class="history-form__input-text" type="text" id="contacts-email" name="contacts-email" required placeholder="Введите почту *">
-            </label>
-          </li>
-        </ul>
+          <ul class="history-form__contacts-list">
+            <li class="history-form__contacts-item">
+              <label for="contacts-tel" class="history-form__label-contacts">Номер телефона:</label>
+              <input id="contacts-tel" class="history-form__input-contacts" type="text" name="contacts-tel" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="history-form__contacts-item">
+              <label for="contacts-email" class="history-form__label-contacts">Адрес почты:</label>
+              <input id="contacts-email" class="history-form__input-contacts" type="text" name="contacts-email" required placeholder="Введите почту *">
+            </li>
+          </ul>
+        </div>
       </fieldset>
 
       <fieldset class="history-form__fieldset history-form__fieldset--app">
-        <legend class="history-form__legend">С каким приложением путешествовали?</legend>
+        <div class="history-form__inner">
+          <legend class="history-form__legend">С каким приложением путешествовали?</legend>
 
-        <ul class="history-form__app-list">
-          <li class="history-form__app-item">
-            <label class="history-form__label">
-              <input class="history-form__input-text" type="radio" id="app-ios" name="app" value="app-ios" checked>Pink для iOS
-            </label>
-          </li>
-          <li class="history-form__app-item">
-            <label class="history-form__label">
-              <input class="history-form__input-text" type="radio" id="app-android" name="app" value="app-android">Pink на Android
-            </label>
-          </li>
-          <li class="history-form__app-item">
-            <label class="history-form__label">
-              <input class="history-form__input-text" type="radio" id="app-windows" name="app" value="app-windows">Windows Phone
-            </label>
-          </li>
-        </ul>
+          <ul class="history-form__app-list">
+            <li class="history-form__app-item">
+              <input id="app-ios" class="visually-hidden history-form__input-app" type="radio" name="app" value="app-ios" checked>
+              <label for="app-ios" class="history-form__label-app">Pink для iOS</label>
+            </li>
+            <li class="history-form__app-item">
+              <input id="app-android" class="visually-hidden history-form__input-app" type="radio" name="app" value="app-android">
+              <label for="app-android" class="history-form__label-app">Pink на Android</label>
+            </li>
+            <li class="history-form__app-item">
+              <input id="app-windows" class="visually-hidden history-form__input-app" type="radio" name="app" value="app-windows">
+              <label for="app-windows" class="history-form__label-app">Windows Phone</label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
 
       <fieldset class="history-form__fieldset history-form__fieldset--review">
-        <legend class="visually-hidden">Напишите свою историю</legend>
+        <div class="history-form__inner">
+          <legend class="visually-hidden">Напишите свою историю</legend>
 
-        <label class="history-form__label">Опишите свои эмоции
-          <textarea class="history-form__textarea" name="review" id="review" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </label>
+          <label for="review" class="history-form__label-review">Опишите свои эмоции</label>
+          <textarea id="review" class="history-form__input-review" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
       </fieldset>
 
-      <div class="history-form__controls">
-        <button  class="history-form__submit" type="submit">Отправить форму</button>
-        <p class="history-form__footnote">* — обязательные поля</p>
+      <div class="history-form__btns">
+        <button class="history-form__submit" type="submit">Отправить форму</button>
+        <p class="history-form__footnote"> — обязательные поля</p>
       </div>
     </form>
   </main>
