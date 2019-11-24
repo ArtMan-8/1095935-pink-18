@@ -1,7 +1,5 @@
 .intro {
-  background-color: #17212d;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  background: #17212d url("../img/bg-back-mobile@1x.jpg") no-repeat;
 
   &--index {
     background-position: center -66px;
@@ -13,9 +11,7 @@
     width: 320px;
     margin: auto;
     height: 395px;
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: left bottom;
+    background: transparent url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
   }
 
   &--photo {

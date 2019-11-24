@@ -117,9 +117,7 @@
 }
 
 .history-form__input-achievement:checked + .history-form__label-achievement::before {
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #ffffff url("../img/icon-yes.svg") no-repeat center;
 }
 
 .history-form__input-app:checked + .history-form__label-app::after {
