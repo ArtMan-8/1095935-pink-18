@@ -62,6 +62,7 @@
     left: -29px;
     top: 10px;
     content: "ХИТ";
+
     @include text(14px, 400, 24px, #ffffff);
     background-color: $color-main;
     transform: rotate(-45deg);

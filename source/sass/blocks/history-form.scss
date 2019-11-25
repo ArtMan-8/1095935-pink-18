@@ -6,10 +6,6 @@
   &--achievement,
   &--app {
     background-color: #f2f2f2;
-  }
-
-  &--achievement,
-  &--app {
     padding-top: 36px;
   }
 
@@ -41,6 +37,7 @@
 .history-form__label-contacts,
 .history-form__label-review {
   margin-left: 22px;
+
   @include text(14px, 400, 30px, $color-main);
   text-transform: uppercase;
 }
@@ -105,6 +102,7 @@
   position: relative;
   cursor: pointer;
   padding-left: 70px;
+
   @include text(18px, 400, 30px, $color-main-text);
 
   &::before {
@@ -160,8 +158,8 @@
   height: 201px;
   border: 2px solid #e5e5e5;
   resize: none;
-
   font-family: inherit;
+
   @include text(18px, 400, 30px, $color-main-text);
 }
 
@@ -172,7 +170,6 @@
 
 .history-form__submit {
   @include btn(280px, 63px);
-
   @include text(18px, 700, 30px, #ffffff);
   text-transform: uppercase;
   background-color: #2aab6d;
