@@ -1,0 +1,18 @@
+.upload-photo {
+  background-color: #f2f2f2;
+}
+
+.upload-photo__title {
+  margin: auto;
+  padding: 22px 20px 43px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.upload-photo__header,
+.upload-photo__text {
+  width: 280px;
+  margin: auto;
+
+  @include text(14px, 400, 30px, $color-main-text);
+}

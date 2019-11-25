@@ -12,33 +12,41 @@
 }
 
 .nav-main__item {
+  display: block;
+  padding: 16px;
   width: 100%;
+  text-align: center;
   box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }
 
 .nav-main__link {
-  display: block;
-
   @include text(18px, 700, 1.78, #ffffff);
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
-  padding: 16px;
+
+  &:hover {
+    color: $color-main;
+  }
+
+  &:active {
+    color: $color-main;
+    opacity: 0.3;
+  }
 }
 
 .nav-main__toggle {
   position: absolute;
-  top: 18px;
-  right: 30px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  top: 16px;
+  right: 18px;
   font-size: 0;
   border: 0;
-  width: 24px;
-  height: 24px;
   background-color: transparent;
   cursor: pointer;
-}
 
-.nav-main__toggle span {
   &::before,
   &::after {
     display: block;
@@ -56,5 +64,16 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $color-main;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+    background-color: $color-main;
   }
 }

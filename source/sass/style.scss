@@ -1,29 +1,8 @@
 @import "variables";
 @import "mixins";
 @import "fonts";
-
-body {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: $color-main-text;
-  background-color: #ffffff;
-  margin: 0;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-}
-
+@import "blocks/visually-hidden.scss";
+@import "blocks/common.scss";
 @import "blocks/page-header.scss";
 @import "blocks/nav-main.scss";
 @import "blocks/page-main.scss";
@@ -31,9 +10,14 @@ body {
 @import "blocks/app.scss";
 @import "blocks/advantages.scss";
 @import "blocks/reviews.scss";
+@import "blocks/controls.scss";
 @import "blocks/tariffs.scss";
 @import "blocks/acrticle.scss";
+@import "blocks/upload-photo.scss";
+@import "blocks/upload-form.scss";
 @import "blocks/contacts.scss";
+@import "blocks/history-form.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+@import "blocks/no-js.scss";

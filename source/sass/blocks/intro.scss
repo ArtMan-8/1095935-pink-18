@@ -1,7 +1,5 @@
 .intro {
-  background-color: #17212d;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  background: #17212d url("../img/bg-back-mobile@1x.jpg") no-repeat;
 
   &--index {
     background-position: center -66px;
@@ -13,19 +11,19 @@
     width: 320px;
     margin: auto;
     height: 395px;
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: left bottom;
+    background: transparent url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
   }
 
   &--photo {
     background-position: center -66px;
-    padding-bottom: 53px;
+    padding-top: 30px;
+    padding-bottom: 84px;
   }
 
   &--form {
     background-position: center -66px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 56px;
   }
 }
 
@@ -33,22 +31,12 @@
   position: relative;
   width: 320px;
   margin: auto;
-  background-color: #233343;
 }
 
 .intro__header {
+  margin: auto;
   width: 230px;
   text-align: center;
 
   @include text(24px, 300, 28px, #ffffff);
-}
-
-.intro__offer {
-  margin: 0;
-  padding: 24px;
-  padding-top: 45px;
-  margin-bottom: 25px;
-  text-align: center;
-
-  @include text(14px, 400, 30px, $color-main-text);
 }

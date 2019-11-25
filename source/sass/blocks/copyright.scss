@@ -14,4 +14,12 @@
 
 .copyright__link-svg {
   fill: $color-main;
+
+  &:hover {
+    fill: $color-main-text;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

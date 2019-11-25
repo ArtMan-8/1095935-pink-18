@@ -1,0 +1,124 @@
+.upload-form {
+  margin: auto;
+}
+
+.upload-form__inner {
+  margin: auto;
+  width: 280px;
+  padding: 20px;
+}
+
+.upload-form__photo {
+  margin-bottom: 18px;
+}
+
+.upload-form__label-tools {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.upload-form__label-tool {
+  font-size: 0;
+  width: 48px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+}
+
+.upload-form__tool-svg {
+  fill: rgba(40, 54, 69, 0.3);
+
+  &:hover {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+
+  &:active {
+    fill: $color-main;
+  }
+
+  &--current {
+    fill: $color-main;
+  }
+}
+
+.upload-form__control {
+  width: 240px;
+  height: 15px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.upload-form__range {
+  position: relative;
+  top: 6px;
+}
+
+.upload-form__scale {
+  width: auto;
+  height: 2px;
+  background-color: #000000;
+}
+
+.upload-form__toggle {
+  position: absolute;
+  top: -6px;
+  width: 11px;
+  height: 11px;
+  background-color: #ffffff;
+  border: 2px solid $color-main;
+  border-radius: 50%;
+  margin-left: 80%;
+  cursor: pointer;
+
+  &:active {
+    background-color: $color-main;
+  }
+}
+
+.upload-form__btns {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 35px 0 29px;
+  text-align: center;
+}
+
+.upload-form__btn {
+  overflow: hidden;
+
+  @include btn(280px, 55px);
+  display: block;
+  margin: auto;
+
+  @include text(18px, bold, 18px, rgba(40, 54, 69, 0.1));
+  margin-bottom: 12px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 28px;
+
+  &--submit {
+    color: $color-main;
+    border-color: $color-main;
+  }
+
+  &--submit:hover {
+    color: #ffffff;
+    background-color: $color-main;
+  }
+
+  &--submit:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--reset:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &--reset:active {
+    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-main-text;
+  }
+}

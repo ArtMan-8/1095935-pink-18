@@ -5,20 +5,22 @@
   color: $text-color;
 }
 
-@mixin btn($padding) {
+@mixin btn($width, $height) {
   display: inline-block;
   vertical-align: middle;
-  cursor: pointer;
-  padding: $padding;
-  text-align: center;
+  box-sizing: border-box;
+  width: $width;
+  height: $height;
   text-decoration: none;
-  border-radius: 3px;
   border: none;
+  cursor: pointer;
 }
 
 @mixin bg-stretch {
   position: relative;
   width: 100vw;
+  min-width: 320px;
+  height: auto;
   left: 50%;
   right: 50%;
   margin-left: -50vw;

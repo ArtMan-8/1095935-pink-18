@@ -1,0 +1,44 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls__toggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: $color-main-text;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
+  &--current::before {
+    box-sizing: content-box;
+    border: 3px solid $color-main-text;
+    opacity: 1;
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,206 @@
+.history-form__fieldset {
+  margin: 0;
+  padding: 33px 0 27px;
+  border: none;
+
+  &--achievement,
+  &--app {
+    background-color: #f2f2f2;
+    padding-top: 36px;
+  }
+
+  &--contacts {
+    padding: 31px 0 26px;
+  }
+
+  &--review {
+    padding-top: 30px;
+  }
+}
+
+.history-form__inner {
+  width: 280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.history-form__user-list,
+.history-form__achievement-list,
+.history-form__contacts-list,
+.history-form__app-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.history-form__label-user,
+.history-form__label-contacts,
+.history-form__label-review {
+  margin-left: 22px;
+
+  @include text(14px, 400, 30px, $color-main);
+  text-transform: uppercase;
+}
+
+.history-form__label-review {
+  margin-left: 48px;
+}
+
+.history-form__input-user,
+.history-form__input-contacts {
+  box-sizing: border-box;
+  width: 280px;
+  height: 63px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  padding-left: 22px;
+  border: 2px solid #e5e5e5;
+
+  @include text(18px, 400, 30px, $color-main-text);
+
+  &:hover {
+    border-color: $color-main-text;
+  }
+
+  &:active {
+    border-color: $color-main;
+  }
+}
+
+.history-form__h2 {
+  margin: 0;
+  padding: 0 20px 20px;
+
+  @include text(14px, 400, 18px, $color-main);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.history-form__achievement-list,
+.history-form__app-list {
+  margin-top: 24px;
+}
+
+.history-form__achievement-item {
+  margin-bottom: 52px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.history-form__app-item {
+  margin-bottom: 43px;
+
+  &:last-child {
+    margin-bottom: 22px;
+  }
+}
+
+.history-form__label-achievement,
+.history-form__label-app {
+  position: relative;
+  cursor: pointer;
+  padding-left: 70px;
+
+  @include text(18px, 400, 30px, $color-main-text);
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    top: -7px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  &:hover::before {
+    border-color: $color-main-text;
+  }
+
+  &:active::before {
+    border-color: $color-main;
+  }
+}
+
+.history-form__label-app {
+  &::before {
+    border-radius: 50%;
+  }
+}
+
+.history-form__input-achievement:checked + .history-form__label-achievement::before {
+  background: #ffffff url("../img/icon-yes.svg") no-repeat center;
+}
+
+.history-form__input-app:checked + .history-form__label-app::after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 12px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $color-main;
+}
+
+.history-form__input-review {
+  box-sizing: border-box;
+  margin-top: 11px;
+  margin-bottom: 18px;
+  padding-top: 15px;
+  padding-left: 17px;
+  width: 280px;
+  height: 201px;
+  border: 2px solid #e5e5e5;
+  resize: none;
+  font-family: inherit;
+
+  @include text(18px, 400, 30px, $color-main-text);
+}
+
+.history-form__btns {
+  width: 280px;
+  margin: auto;
+}
+
+.history-form__submit {
+  @include btn(280px, 63px);
+  @include text(18px, 700, 30px, #ffffff);
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+  &:hover {
+    border-color: #1c9b5e;
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: #1c9b5e;
+    background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+}
+
+.history-form__footnote {
+  @include text(14px, 400, 30px, $color-main-text);
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    content: "*";
+    color: $color-main;
+  }
+}

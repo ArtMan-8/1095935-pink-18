@@ -13,10 +13,20 @@
   @include text(18px, 700, 18px, #ffffff);
   text-decoration: none;
 
-  @include btn(16px 35px);
+  @include btn(280px, 55px);
   border: 3px solid #ffffff;
   border-radius: 30px;
   margin-bottom: 25px;
+  padding-top: 14px;
+
+  &:hover {
+    color: $color-main;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .app__list {
@@ -31,8 +41,7 @@
 
 .app__link {
   font-size: 0;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: transparent no-repeat center;
   width: 47px;
   height: 56px;
 

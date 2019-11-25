@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 20px;
+  padding-top: 39px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,4 +11,25 @@
 
 .page-footer__logo-link {
   margin-bottom: 30px;
+}
+
+.page-footer__logo-svg {
+  fill: #000000;
+
+  &:active {
+    fill: currentColor;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-glasses {
+  fill: $color-main;
+}
+
+.page-footer__logo-svg:hover .page-footer__logo-sign {
+  fill: $color-main;
+}
+
+.page-footer__logo-svg:active .page-footer__logo-sign {
+  fill: #000000;
 }

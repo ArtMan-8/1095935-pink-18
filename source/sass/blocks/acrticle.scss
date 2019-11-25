@@ -3,6 +3,10 @@
   margin: 0 auto;
   margin-bottom: 20px;
   width: 280px;
+
+  &--panorama {
+    margin-top: 49px;
+  }
 }
 
 .article__link {
@@ -15,7 +19,9 @@
   background-color: #cccccc;
 
   &--panorama {
-    @include bg-stretch;
+    width: 320px;
+    margin-left: -20px;
+    // @include bg-stretch;
   }
 }
 
@@ -32,16 +38,11 @@
 }
 
 .article__inner {
-  margin: 0;
-  padding: 18px;
+  padding: 17px 18px 20px;
   background-color: #f2f2f2;
 
   display: flex;
   flex-direction: column;
-
-  &--panorama {
-    margin: 0 20px;
-  }
 }
 
 .article__author {
@@ -58,14 +59,14 @@
 
 .article__text {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 
   @include text(14px, 300, 24px, $color-main-text);
 }
 
 .article__like-btn {
   position: relative;
-  padding-left: 30px;
+  padding-left: 31px;
 
   @include text(12px, 400, 24px, $color-main);
   text-transform: uppercase;
@@ -79,8 +80,6 @@
     height: 13px;
     left: 0;
     top: 1px;
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: transparent url("../img/icon-heart.svg") no-repeat center;
   }
 }
