@@ -17,21 +17,32 @@
   width: 100%;
   text-align: center;
   box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+
+  &:not(.nav-main__item--current) .nav-main__link {
+    &:hover {
+      color: $color-main;
+    }
+
+    &:active {
+      color: $color-main;
+      opacity: 0.3;
+    }
+  }
 }
 
 .nav-main__link {
-  @include text(18px, 700, 1.78, #ffffff);
+  @include text(18px, 700, 32px, #ffffff);
   text-transform: uppercase;
   text-decoration: none;
 
-  &:hover {
-    color: $color-main;
-  }
+  // &:hover {
+  //   color: $color-main;
+  // }
 
-  &:active {
-    color: $color-main;
-    opacity: 0.3;
-  }
+  // &:active {
+  //   color: $color-main;
+  //   opacity: 0.3;
+  // }
 }
 
 .nav-main__toggle {

@@ -27,16 +27,17 @@
 
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .upload-form__tool-svg {
   fill: rgba(40, 54, 69, 0.3);
 
-  &:hover {
+  &:not(.upload-form__tool-svg--current):hover {
     fill: rgba(40, 54, 69, 0.5);
   }
 
-  &:active {
+  &:not(.upload-form__tool-svg--current):active {
     fill: $color-main;
   }
 
@@ -92,33 +93,46 @@
   display: block;
   margin: auto;
 
-  @include text(18px, bold, 18px, rgba(40, 54, 69, 0.1));
+  @include text(18px, 700, 18px, rgba(40, 54, 69, 0.1));
   margin-bottom: 12px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 28px;
 
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 1);
+    border-color: rgba(0, 0, 0, 1);
+  }
+
   &--submit {
     color: $color-main;
     border-color: $color-main;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $color-main;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
-  &--submit:hover {
-    color: #ffffff;
-    background-color: $color-main;
-  }
+  &--reset {
 
-  &--submit:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+    &:hover {
+      color: rgba(40, 54, 69, 0.3);
+      border-color: rgba(40, 54, 69, 0.3);
+    }
 
-  &--reset:hover {
-    color: rgba(40, 54, 69, 0.3);
-    border-color: rgba(40, 54, 69, 0.3);
-  }
-
-  &--reset:active {
-    opacity: 0.3;
-    color: rgba(255, 255, 255, 0.3);
-    background-color: $color-main-text;
+    &:active {
+      opacity: 0.3;
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $color-main-text;
+    }
   }
 }

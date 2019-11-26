@@ -65,6 +65,11 @@
   &:active {
     border-color: $color-main;
   }
+
+  &:focus {
+    outline: none;
+    border-color: $color-main;
+  }
 }
 
 .history-form__h2 {
@@ -161,6 +166,19 @@
   font-family: inherit;
 
   @include text(18px, 400, 30px, $color-main-text);
+
+  &:hover {
+    border-color: $color-main-text;
+  }
+
+  &:active {
+    border-color: $color-main;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-main;
+  }
 }
 
 .history-form__btns {
