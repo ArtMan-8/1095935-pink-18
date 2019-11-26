@@ -84,12 +84,16 @@
 /*   tablet version   */
 
 @media ($mq-tablet) {
+  .advantages {
+    padding-bottom: 0;
+  }
+
   .advantages__inner {
     padding-top: 36px;
   }
 
   .advantages__title {
-    width: 660px;
+    width: 620px;
     margin-bottom: 50px;
   }
 
@@ -109,6 +113,7 @@
 
   .advantages__list {
     padding-bottom: 28px;
+    margin-bottom: 0;
 
     &::after {
       position: absolute;

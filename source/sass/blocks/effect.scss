@@ -1,0 +1,74 @@
+.effect {
+  display: none;
+}
+
+@media ($mq-tablet) {
+  .effect {
+    display: block;
+  }
+
+  .effect__inner {
+    width: 620px;
+    margin: auto;
+    padding: 55px 20px;
+    padding-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .effect__timer {
+    position: relative;
+    width: 240px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 175px;
+      height: 175px;
+      left: 19px;
+      top: 57px;
+      border-radius: 50%;
+      border: 14px solid $color-main;
+    }
+
+    &::after {
+      position: absolute;
+      content: "24";
+      left: 64px;
+      top: 78px;
+
+      @include text(96px, 700, 150px, $color-main);
+    }
+  }
+
+  .effect__research {
+    margin-top: 16px;
+    margin-right: 10px;
+    width: 300px;
+  }
+
+  .effect__header {
+    width: 200px;
+    margin-bottom: 8px;
+    @include text(30px, 700, 36px, #000000);
+  }
+
+  .effect__description,
+  .effect__link {
+    margin-top: 0;
+    @include text(14px, 400, 24px, $color-main-text);
+  }
+
+  .effect__link {
+    color: $color-main;
+
+    &:hover {
+      color: $color-main-text;
+    }
+
+    &:active {
+      color: rgba(40, 54, 69, 0.3);
+    }
+  }
+}
