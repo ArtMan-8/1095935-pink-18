@@ -33,3 +33,23 @@
 .page-footer__logo-svg:active .page-footer__logo-sign {
   fill: #000000;
 }
+
+
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .page-footer {
+    padding: 34px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--index {
+      display: flex;
+    }
+  }
+
+  .page-footer__logo-link {
+    margin-bottom: 0;
+  }
+}
