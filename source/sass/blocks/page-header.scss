@@ -25,3 +25,15 @@
     opacity: 0.3;
   }
 }
+
+
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .page-header__logo-link {
+    width: 147px;
+    height: 40px;
+    margin: 27px 20px 38px;
+  }
+}

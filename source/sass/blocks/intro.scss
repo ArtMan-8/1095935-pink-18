@@ -1,4 +1,5 @@
 .intro {
+  position: relative;
   background: #17212d url("../img/bg-back-mobile@1x.jpg") no-repeat;
 
   &--index {
@@ -28,7 +29,6 @@
 }
 
 .intro__inner {
-  position: relative;
   width: 320px;
   margin: auto;
 }
@@ -39,4 +39,28 @@
   text-align: center;
 
   @include text(24px, 300, 28px, #ffffff);
+}
+
+
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .intro {
+    background: #17212d url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
+
+    &--index {
+      background-position: center -110px;
+
+      &::before {
+        width: auto;
+        height: 620px;
+        background: transparent url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom;
+      }
+    }
+  }
+
+  .intro__inner {
+    width: 660px;
+  }
 }

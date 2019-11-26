@@ -34,15 +34,6 @@
   @include text(18px, 700, 32px, #ffffff);
   text-transform: uppercase;
   text-decoration: none;
-
-  // &:hover {
-  //   color: $color-main;
-  // }
-
-  // &:active {
-  //   color: $color-main;
-  //   opacity: 0.3;
-  // }
 }
 
 .nav-main__toggle {
@@ -86,5 +77,15 @@
   &:active::after {
     opacity: 0.3;
     background-color: $color-main;
+  }
+}
+
+
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .nav-main__toggle {
+    top: 40px;
   }
 }
