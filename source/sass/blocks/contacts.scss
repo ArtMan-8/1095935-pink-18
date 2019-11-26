@@ -60,3 +60,43 @@
   background-position: center top, center 95px, center bottom;
   background-size: 100%, auto, auto;
 }
+
+
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .contacts__inner {
+    width: 630px;
+    padding: 20px 15px 0;
+    margin-bottom: -20px;
+  }
+
+  .contacts__title {
+    margin-bottom: 35px;
+  }
+
+  .contacts__header {
+    width: 400px;
+    margin: auto;
+
+    @include text(40px, 300, normal, $color-main-text);
+  }
+
+  .contacts__types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    width: 240px;
+    margin-bottom: 48px;
+  }
+
+  .contacts__map {
+    height: 370px;
+    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
+    background-position: center top, center 190px, center -350px;
+  }
+}
