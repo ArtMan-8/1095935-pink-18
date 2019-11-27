@@ -58,9 +58,20 @@
         background: transparent url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom;
       }
     }
+
+    &--photo {
+      padding-top: 64px;
+      padding-bottom: 130px;
+      background-position: center -110px;
+    }
   }
 
   .intro__inner {
-    width: 620px;
+    width: 660px;
+  }
+
+  .intro__header {
+    width: 360px;
+    @include text(50px, 300, normal, #ffffff);
   }
 }
