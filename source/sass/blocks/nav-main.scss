@@ -4,9 +4,7 @@
 }
 
 .nav-main__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  @include reset-list;
   display: flex;
   flex-wrap: wrap;
 }

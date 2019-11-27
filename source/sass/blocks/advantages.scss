@@ -27,9 +27,9 @@
 
 .advantages__list {
   position: relative;
-  list-style: none;
+  @include reset-list;
   margin-top: 36px;
-  padding: 0;
+  margin-bottom: 14px;
   background-color: $color-bg-light;
   text-align: center;
 
