@@ -83,3 +83,95 @@
     background: transparent url("../img/icon-heart.svg") no-repeat center;
   }
 }
+
+
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .article__wrapper {
+    width: 620px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .article {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
+
+    &--panorama {
+      margin-top: 76px;
+      margin-bottom: 47px;
+      width: 620px;
+    }
+  }
+
+  .article__img {
+    width: 300px;
+    height: 300px;
+
+    &--panorama {
+      width: 660px;
+      height: 509px;
+    }
+  }
+
+  .article__type {
+    top: 57px;
+  }
+
+  .article__inner {
+    padding: 24px 26px 24px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &--panorama {
+      padding-bottom: 16px;
+      flex-direction: row;
+
+      .article__like {
+        order: 2;
+      }
+    }
+  }
+
+  .article__title {
+    order: 1;
+  }
+
+  .article__like-btn {
+    position: relative;
+    display: block;
+    width: auto;
+    padding-left: 0;
+    padding-right: 31px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 13px;
+      height: 13px;
+      right: 6px;
+      top: 6px;
+      background: transparent url("../img/icon-heart.svg") no-repeat center;
+    }
+  }
+
+  .article__text {
+    min-height: 50px;
+    order: 3;
+  }
+
+  .article__like {
+    order: 4;
+  }
+}
