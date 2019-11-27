@@ -1,5 +1,5 @@
 .tariffs {
-  background-color: #f2f2f2;
+  background-color: $color-bg-light;
   padding-bottom: 40px;
 }
 
@@ -134,7 +134,7 @@
   }
 
   .tariffs__header-none {
-    background-color: #f2f2f2;
+    background-color: $color-bg-light;
   }
 
   .tariffs__header {

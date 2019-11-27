@@ -54,7 +54,7 @@
 
 .contacts__map {
   height: 200px;
-  background-color: #f2f2f2;
+  background-color: $color-bg-light;
   background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center top, center 95px, center bottom;
