@@ -16,3 +16,19 @@
 
   @include text(14px, 400, 30px, $color-main-text);
 }
+
+
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .upload-photo__title {
+    padding: 40px 20px 72px;
+  }
+
+  .upload-photo__header,
+  .upload-photo__text {
+    width: 430px;
+    font-size: 18px;
+  }
+}
