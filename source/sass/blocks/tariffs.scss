@@ -142,10 +142,6 @@
     height: 81px;
 
     &--hit::before {
-      position: absolute;
-      display: block;
-      width: 110px;
-      height: 29px;
       left: -34px;
       top: 6px;
     }
@@ -180,5 +176,49 @@
     top: 0;
     left: 0;
     margin: auto;
+  }
+}
+
+
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .tariffs__inner {
+    margin-top: -20px;
+    padding-bottom: 30px;
+  }
+
+  .tariffs__table {
+    width: 940px;
+    margin-top: 142px;
+  }
+
+  .tariffs__header {
+    width: 235px;
+    height: 100px;
+
+    &--hit::before {
+      left: -28px;
+      top: 12px;
+    }
+  }
+
+  .tariffs__title {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .tariffs__cost {
+    font-size: 24px;
+  }
+
+  .tariffs__feature {
+    padding-left: 20px;
+    font-size: 18px;
+  }
+
+  .tariffs__item {
+    height: 60px;
   }
 }
