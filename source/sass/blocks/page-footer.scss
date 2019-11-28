@@ -53,3 +53,13 @@
     margin-bottom: 0;
   }
 }
+
+
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .page-footer {
+    padding: 65px 10px;
+  }
+}
