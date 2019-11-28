@@ -78,8 +78,6 @@
   }
 }
 
-
-
 /*   tablet version   */
 
 @media ($mq-tablet) {
@@ -88,18 +86,12 @@
   }
 }
 
-
-
 /*   desktop version   */
 
 @media ($mq-desktop) {
   .nav-main {
     margin: 0;
     width: auto;
-  }
-
-  .nav-main__list {
-
   }
 
   .nav-main__item {

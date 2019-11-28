@@ -15,9 +15,8 @@
 
 .advantages__header,
 .advantages__text {
-  margin: 0;
-
   @include text(24px, 300, 30px, $color-main-text);
+  margin: 0;
   text-align: center;
 }
 
@@ -26,10 +25,10 @@
 }
 
 .advantages__list {
+  @include reset-list;
   position: relative;
   display: flex;
   flex-direction: column;
-  @include reset-list;
   margin-top: 36px;
   margin-bottom: 14px;
   background-color: $color-bg-light;
@@ -81,8 +80,6 @@
 
   @include text(14px, 400, 24px, $color-main-text);
 }
-
-
 
 /*   tablet version   */
 
@@ -137,8 +134,6 @@
     text-align: left;
   }
 }
-
-
 
 /*   desktop version   */
 
@@ -196,7 +191,7 @@
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
     }
 
-    &--friends  {
+    &--friends {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
     }
   }

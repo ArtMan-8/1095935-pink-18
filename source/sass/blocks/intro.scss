@@ -3,10 +3,6 @@
   background: #17212d url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: center -66px;
 
-  &--index {
-
-  }
-
   &--index::before {
     display: block;
     content: "";
@@ -39,8 +35,6 @@
 
   @include text(24px, 300, 28px, #ffffff);
 }
-
-
 
 /*   tablet version   */
 
@@ -76,12 +70,10 @@
   }
 
   .intro__header {
-    width: 480px;
     @include text(50px, 300, 60px, #ffffff);
+    width: 480px;
   }
 }
-
-
 
 /*   desktop version   */
 
