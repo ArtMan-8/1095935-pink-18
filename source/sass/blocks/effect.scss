@@ -72,3 +72,45 @@
     }
   }
 }
+
+
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .effect {
+    background-color: $color-bg-light;
+  }
+
+  .effect__inner {
+    width: 920px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 67px;
+  }
+
+  .effect__timer {
+    width: 300px;
+    height: 345px;
+  }
+
+  .effect__research {
+    width: 530px;
+    margin-top: 66px;
+    margin-right: 34px;
+  }
+
+  .effect__header {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .effect__description {
+    @include text(18px, 400, 30px, $color-main-text);
+    margin-bottom: 30px;
+  }
+
+  .effect__link {
+    @include text(18px, 400, 30px, $color-main);
+  }
+}
