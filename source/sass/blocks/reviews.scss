@@ -1,6 +1,6 @@
 .reviews {
   background-color: #ffffff;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .reviews__inner {
@@ -11,9 +11,8 @@
 }
 
 .reviews__list {
-  list-style: none;
-  margin: 0;
-  margin-bottom: 26px;
+  @include reset-list;
+  margin-bottom: 10px;
   padding: 0 20px;
 }
 
@@ -22,7 +21,8 @@
   display: none;
 
   &--current {
-    display: list-item;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -31,6 +31,10 @@
   padding: 0;
 
   @include text(18px, 700, 30px, #000000);
+}
+
+.reviews__who {
+  display: none;
 }
 
 .reviews__text {
@@ -42,5 +46,88 @@
 
   &::after {
     content: "»";
+  }
+}
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .reviews__inner {
+    width: 660px;
+    margin: auto;
+    padding-top: 15px;
+  }
+
+  .reviews__item {
+    width: 620px;
+  }
+
+  .reviews__title {
+    margin-bottom: 20px;
+  }
+
+  .reviews__user {
+    font-size: 20px;
+  }
+
+  .reviews__who {
+    @include text(14px, 400, 30px, $color-main-text);
+    display: inline;
+  }
+
+  .reviews__text {
+    order: -1;
+    font-size: 18px;
+    margin-bottom: 34px;
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .reviews__inner {
+    width: 960px;
+    padding-top: 60px;
+  }
+
+  .reviews__item {
+    position: relative;
+    width: 690px;
+    margin: auto;
+    padding-top: 96px;
+    background: transparent url("../img/icon-quotes.svg") no-repeat center top;
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 22px;
+      height: 41px;
+      top: 140px;
+      opacity: 0.3;
+    }
+
+    &::before {
+      background: transparent url("../img/icon-review-arrow-left.svg") no-repeat center;
+      left: -125px;
+    }
+
+    &::after {
+      background: transparent url("../img/icon-review-arrow-right.svg") no-repeat center;
+      right: -125px;
+    }
+  }
+
+  .reviews__text {
+    @include text(18px, 400, 30px, $color-main-text);
+  }
+
+  .reviews__user {
+    font-size: 24px;
+  }
+
+  .reviews__who {
+    font-size: 18px;
   }
 }

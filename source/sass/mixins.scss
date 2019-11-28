@@ -5,6 +5,13 @@
   color: $text-color;
 }
 
+@mixin reset-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 @mixin btn($width, $height) {
   display: inline-block;
   vertical-align: middle;

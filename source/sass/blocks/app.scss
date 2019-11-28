@@ -1,5 +1,16 @@
 .app {
-  background-color: #17212d;
+  position: relative;
+}
+
+.app__header {
+  @include text(24px, 300, normal, #ffffff);
+  position: absolute;
+  visibility: hidden;
+  width: 230px;
+  margin: auto;
+  text-align: center;
+  top: -376px;
+  left: 45px;
 }
 
 .app__downloads {
@@ -34,7 +45,8 @@
   margin-bottom: 9px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
   padding: 10px;
   width: 205px;
 }
@@ -59,8 +71,73 @@
 }
 
 .app__text {
+  @include text(14px, 300, 24px, #ffffff);
   margin: 0;
   padding-bottom: 30px;
+}
 
-  @include text(14px, 300, 24px, #ffffff);
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .app {
+    margin-top: -525px;
+    margin-left: -320px;
+    padding-bottom: 81px;
+    background-color: transparent;
+  }
+
+  .app__header {
+    @include text(40px, 300, 46px, #ffffff);
+    width: 190px;
+    padding: 0 55px;
+    position: static;
+    visibility: visible;
+    margin-bottom: 8px;
+  }
+
+  .app__downloads {
+    width: 300px;
+  }
+
+  .app__download-btn {
+    width: 100%;
+    margin-bottom: 36px;
+    font-size: 18px;
+  }
+
+  .app__list {
+    margin-bottom: 25px;
+  }
+
+  .app__text {
+    @include text(18px, 300, 24px, #ffffff);
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .app {
+    width: 300px;
+    margin-top: -634px;
+    margin-left: 0;
+    padding-bottom: 93px;
+  }
+
+  .app__header {
+    @include text(50px, 300, 60px, #ffffff);
+    width: 230px;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 22px;
+  }
+
+  .app__download-btn {
+    margin-bottom: 60px;
+    font-size: 21px;
+  }
+
+  .app__list {
+    margin-bottom: 42px;
+  }
 }

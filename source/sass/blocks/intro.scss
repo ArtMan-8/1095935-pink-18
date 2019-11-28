@@ -1,9 +1,7 @@
 .intro {
+  position: relative;
   background: #17212d url("../img/bg-back-mobile@1x.jpg") no-repeat;
-
-  &--index {
-    background-position: center -66px;
-  }
+  background-position: center -66px;
 
   &--index::before {
     display: block;
@@ -15,20 +13,17 @@
   }
 
   &--photo {
-    background-position: center -66px;
     padding-top: 30px;
     padding-bottom: 84px;
   }
 
   &--form {
-    background-position: center -66px;
     padding-top: 30px;
     padding-bottom: 56px;
   }
 }
 
 .intro__inner {
-  position: relative;
   width: 320px;
   margin: auto;
 }
@@ -39,4 +34,91 @@
   text-align: center;
 
   @include text(24px, 300, 28px, #ffffff);
+}
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .intro {
+    background: #17212d url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
+
+    &--index {
+      background-position: center -110px;
+
+      &::before {
+        width: auto;
+        height: 620px;
+        background: transparent url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom;
+      }
+    }
+
+    &--photo {
+      padding-top: 70px;
+      padding-bottom: 140px;
+      background-position: center -110px;
+    }
+
+    &--form {
+      padding-top: 72px;
+      padding-bottom: 78px;
+      background-position: center -110px;
+    }
+  }
+
+  .intro__inner {
+    width: 660px;
+  }
+
+  .intro__header {
+    @include text(50px, 300, 60px, #ffffff);
+    width: 480px;
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .intro {
+    background: #17212d url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
+
+    &--index {
+      background-position: center top;
+
+      &::before {
+        width: 960px;
+        height: 854px;
+        background: transparent url("../img/iphone-hand-desktop@1x.png") no-repeat 25px bottom;
+      }
+    }
+
+    &--photo {
+      padding-top: 170px;
+      padding-bottom: 104px;
+      background-position: center top;
+
+      .intro__header {
+        width: 500px;
+      }
+    }
+
+    &--form {
+      padding-top: 172px;
+      padding-bottom: 102px;
+      background-position: center top;
+
+      .intro__header {
+        width: 750px;
+      }
+    }
+  }
+
+  .intro__inner {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .intro__header {
+    @include text(50px, 300, 60px, #ffffff);
+  }
 }

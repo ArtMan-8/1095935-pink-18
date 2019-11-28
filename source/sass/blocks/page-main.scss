@@ -1,4 +1,4 @@
-.page-main__offer {
+.page-main__text {
   margin: auto;
   width: 290px;
   padding: 20px 15px 0;
@@ -7,3 +7,27 @@
 
   @include text(14px, 400, 30px, $color-main-text);
 }
+
+.page-main__invite-fill {
+  display: none;
+}
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .page-main__text {
+    width: 490px;
+    font-size: 18px;
+    padding-top: 92px;
+    margin-bottom: 2px;
+  }
+
+  .page-main__invite-fill {
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+/*   desktop version   */

@@ -1,7 +1,7 @@
 .page-header {
   position: relative;
   width: 100%;
-  background-color: #283645;
+  background-color: $color-main-text;
 }
 
 .page-header__logo-link {
@@ -23,5 +23,41 @@
   &:active {
     fill: #ffffff;
     opacity: 0.3;
+  }
+}
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .page-header__logo-link {
+    width: 147px;
+    height: 40px;
+    margin: 27px 20px 38px;
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .page-header {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  .page-header__inner {
+    display: flex;
+    width: 940px;
+    margin: 27px 0 43px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .page-header__logo-link {
+    margin: 0;
   }
 }

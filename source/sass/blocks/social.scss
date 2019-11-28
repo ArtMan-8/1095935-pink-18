@@ -29,3 +29,25 @@
 .social__icon {
   fill: $color-main;
 }
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .social {
+    margin-bottom: 0;
+    margin-left: -13px;
+  }
+
+  .copyright {
+    margin-top: 10px;
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .social {
+    margin-top: 8px;
+    margin-left: 10px;
+  }
+}
