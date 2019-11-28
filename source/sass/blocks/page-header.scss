@@ -37,3 +37,26 @@
     margin: 27px 20px 38px;
   }
 }
+
+
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .page-header {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  .page-header__inner {
+    display: flex;
+    margin: 27px 130px 43px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .page-header__logo-link {
+    margin: 0;
+  }
+}
