@@ -107,6 +107,7 @@
   .app__download-btn {
     width: 100%;
     margin-bottom: 36px;
+    font-size: 21px;
   }
 
   .app__list {
@@ -115,5 +116,31 @@
 
   .app__text {
     @include text(18px, 300, 24px, #ffffff);
+  }
+}
+
+
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .app {
+    margin-top: -634px;
+    margin-left: -644px;
+    padding-bottom: 93px;
+  }
+
+  .app__header {
+    width: 230px;
+    margin-bottom: 22px;
+    @include text(50px, 300, 60px, #ffffff);
+  }
+
+  .app__download-btn {
+    margin-bottom: 60px;
+  }
+
+  .app__list {
+    margin-bottom: 42px;
   }
 }
