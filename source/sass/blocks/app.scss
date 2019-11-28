@@ -84,9 +84,9 @@
 
 @media ($mq-tablet) {
   .app {
-    position: absolute;
-    top: 95px;
-    left: calc((100% - 660px) / 2 + 20px);
+    margin-top: -525px;
+    margin-left: -320px;
+    padding-bottom: 81px;
     background-color: transparent;
   }
 

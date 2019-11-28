@@ -1,9 +1,10 @@
 .intro {
   position: relative;
   background: #17212d url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-position: center -66px;
 
   &--index {
-    background-position: center -66px;
+
   }
 
   &--index::before {
@@ -16,13 +17,11 @@
   }
 
   &--photo {
-    background-position: center -66px;
     padding-top: 30px;
     padding-bottom: 84px;
   }
 
   &--form {
-    background-position: center -66px;
     padding-top: 30px;
     padding-bottom: 56px;
   }
