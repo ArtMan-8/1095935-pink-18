@@ -95,7 +95,7 @@
       &::before {
         width: 1050px;
         height: 854px;
-        background: transparent url("../img/iphone-hand-desktop@1x.png") no-repeat 70px bottom;
+        background: transparent url("../img/iphone-hand-desktop@1x.png") no-repeat 25px bottom;
       }
     }
 
@@ -121,7 +121,9 @@
   }
 
   .intro__inner {
-    width: 1200px;
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .intro__header {

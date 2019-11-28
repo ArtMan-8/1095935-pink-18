@@ -51,7 +51,12 @@
 
   .page-header__inner {
     display: flex;
-    margin: 27px 130px 43px;
+    width: 940px;
+    margin: 27px 0 43px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
     align-items: flex-end;
   }

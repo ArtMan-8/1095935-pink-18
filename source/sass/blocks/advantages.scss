@@ -27,6 +27,8 @@
 
 .advantages__list {
   position: relative;
+  display: flex;
+  flex-direction: column;
   @include reset-list;
   margin-top: 36px;
   margin-bottom: 14px;
@@ -48,6 +50,7 @@
     content: "";
     margin: auto;
     height: 278px;
+    width: 157px;
     margin-top: 28px;
     background: url("../img/iphone-screen-mobile@1x.png") no-repeat center top;
   }
@@ -120,7 +123,7 @@
       display: block;
       content: "";
       top: -25px;
-      left: calc((100% - 660px) / 2 + 20px);
+      margin-left: 20px;
       width: 268px;
       height: 481px;
       background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
@@ -129,8 +132,81 @@
 
   .advantages__item {
     width: 310px;
-    margin-right: calc((100% - 660px) / 2);
+    margin-right: 0;
     padding: 16px 20px 18px;
     text-align: left;
+  }
+}
+
+
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .advantages__inner {
+    padding-top: 56px;
+  }
+
+  .advantages__title {
+    width: 740px;
+    margin-bottom: 94px;
+  }
+
+  .advantages__header,
+  .advantages__text {
+    @include text(50px, 300, 55px, $color-main-text);
+  }
+
+  .advantages__header {
+    margin-bottom: 5px;
+  }
+
+  .advantages__text {
+    width: 500px;
+  }
+
+  .advantages__list {
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .advantages__item {
+    width: 240px;
+    margin: 0 auto;
+    margin-top: -13px;
+    text-align: center;
+    background-position: center top;
+    z-index: 1;
+
+    &:nth-child(n) {
+      padding-top: 358px;
+    }
+
+    &--mood {
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    }
+
+    &--world {
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    }
+
+    &--friends  {
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    }
+  }
+
+  .advantages__subheader {
+    @include text(30px, 700, 30px, #000000);
+    margin-bottom: 24px;
+  }
+
+  .advantages__description {
+    @include text(18px, 400, 30px, $color-main-text);
   }
 }
