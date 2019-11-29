@@ -328,21 +328,38 @@
     align-self: flex-start;
   }
 
-  .history-form__input-contacts {
-    order: 1;
+  .history-form__for-pseudo {
+    position: relative;
     width: 100%;
+    order: 1;
     margin-top: 0;
     margin-bottom: 10px;
 
     &::after {
+      position: absolute;
       display: block;
       content: "";
-      width: 60px;
-      height: 60px;
-      right: 0;
-      top: 0;
+      width: 59px;
+      height: 59px;
+      right: 2px;
+      top: 2px;
       background-color: #e5e5e5;
+      background-repeat: no-repeat;
+      background-position: center;
     }
+
+    &--tel::after {
+      background-image: url("../img/icon-phone.svg");
+    }
+
+    &--email::after {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+
+  .history-form__input-contacts{
+    width: 100%;
+    margin: 0;
   }
 
   .history-form__app-list {

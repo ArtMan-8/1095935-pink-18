@@ -102,11 +102,15 @@
         <ul class="history-form__contacts-list">
           <li class="history-form__contacts-item">
             <label for="contacts-tel" class="history-form__label-contacts">Номер телефона</label>
-            <input id="contacts-tel" class="history-form__input-contacts" type="text" name="contacts-tel" placeholder="Номер, пожалуйста">
+            <div class="history-form__for-pseudo history-form__for-pseudo--tel">
+              <input id="contacts-tel" class="history-form__input-contacts" type="text" name="contacts-tel" placeholder="Номер, пожалуйста">
+            </div>
           </li>
           <li class="history-form__contacts-item">
             <label for="contacts-email" class="history-form__label-contacts">Адрес почты</label>
-            <input id="contacts-email" class="history-form__input-contacts" type="text" name="contacts-email" required placeholder="Введите почту *">
+            <div class="history-form__for-pseudo history-form__for-pseudo--email">
+              <input id="contacts-email" class="history-form__input-contacts" type="text" name="contacts-email" required placeholder="Введите почту *">
+            </div>
           </li>
         </ul>
       </fieldset>
