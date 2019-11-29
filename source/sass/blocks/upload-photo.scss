@@ -30,3 +30,15 @@
     font-size: 18px;
   }
 }
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .upload-photo {
+    background-color: #ffffff;
+  }
+
+  .upload-photo__title {
+    padding: 8px 20px 64px;
+  }
+}
