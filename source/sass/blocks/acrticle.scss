@@ -165,11 +165,62 @@
   }
 
   .article__text {
-    min-height: 50px;
+    min-height: 47px;
     order: 3;
   }
 
   .article__like {
     order: 4;
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .article__wrapper {
+    width: 940px;
+  }
+
+  .article {
+    margin-bottom: 54px;
+
+    &--panorama {
+      width: 940px;
+      margin-top: 88px;
+      margin-bottom: 50px;
+
+      .article__text {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .article__img {
+    height: 400px;
+
+    &--panorama {
+      width: 980px;
+      height: 506px;
+    }
+  }
+
+  .article__inner {
+
+    &--panorama {
+      padding-bottom: 0;
+    }
+  }
+
+  .article__text {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .article__like-btn {
+    padding-right: 35px;
+  }
+
+  .article__type {
+    top: 54px;
   }
 }
