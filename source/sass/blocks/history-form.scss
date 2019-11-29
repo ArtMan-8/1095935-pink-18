@@ -1,41 +1,39 @@
 .history-form {
   display: flex;
   flex-direction: column;
+
+  margin: auto;
 }
 
 .history-form__fieldset {
-  margin: 0;
-  padding: 33px 0 27px;
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  padding: 33px calc((100vw - 280px) / 2) 27px;
   border: none;
 
   &--achievement,
   &--app {
     background-color: $color-bg-light;
-    padding-top: 36px;
-  }
-
-  &--contacts {
-    padding: 31px 0 26px;
-  }
-
-  &--review {
-    padding-top: 30px;
   }
 }
 
-.history-form__inner {
-  width: 280px;
-  margin: auto;
-  padding: 0 20px;
+.history-form__legend {
+  position: absolute;
+  width: 220px;
+  top: 36px;
+  margin-left: 28px;
+
+  @include text(14px, 400, 18px, $color-main);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .history-form__user-list,
 .history-form__achievement-list,
 .history-form__contacts-list,
 .history-form__app-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .history-form__label-user,
@@ -77,18 +75,13 @@
   }
 }
 
-.history-form__h2 {
-  margin: 0;
-  padding: 0 20px 20px;
-
-  @include text(14px, 400, 18px, $color-main);
-  text-align: center;
-  text-transform: uppercase;
+.history-form__contacts-list {
+  margin-top: -2px;
 }
 
 .history-form__achievement-list,
 .history-form__app-list {
-  margin-top: 24px;
+  margin-top: 82px;
 }
 
 .history-form__achievement-item {
@@ -160,7 +153,7 @@
 
 .history-form__input-review {
   box-sizing: border-box;
-  margin-top: 11px;
+  margin-top: 10px;
   margin-bottom: 18px;
   padding-top: 15px;
   padding-left: 17px;
@@ -226,4 +219,10 @@
     content: "*";
     color: $color-main;
   }
+}
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+
 }

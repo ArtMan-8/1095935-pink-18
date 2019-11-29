@@ -100,6 +100,11 @@
     box-shadow: none;
     padding: 0;
     margin-left: 80px;
+
+    &--current .nav-main__link {
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 9px;
+    }
   }
 
   .nav-main__link {
