@@ -102,8 +102,12 @@
 
     &--panorama {
       margin-top: 76px;
-      margin-bottom: 47px;
+      margin-bottom: 50px;
       width: 620px;
+
+      .article__text {
+        margin-bottom: 8px;
+      }
     }
   }
 
@@ -167,6 +171,7 @@
   .article__text {
     min-height: 47px;
     order: 3;
+    margin-bottom: 10px;
   }
 
   .article__like {
