@@ -153,12 +153,12 @@
 
 .history-form__input-review {
   box-sizing: border-box;
-  margin-top: 10px;
+  margin-top: 38px;
   margin-bottom: 18px;
   padding-top: 15px;
   padding-left: 17px;
   width: 280px;
-  height: 201px;
+  min-height: 201px;
   border: 2px solid #e5e5e5;
   resize: none;
   font-family: inherit;
@@ -224,5 +224,157 @@
 /*   tablet version   */
 
 @media ($mq-tablet) {
+  .history-form {
+    margin-top: 70px;
+  }
 
+  .history-form__fieldset {
+    width: 616px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 0;
+    background-color: #ffffff;
+
+    &:not(:first-child) {
+      border: 2px solid #e5e5e5;
+    }
+
+    &--user {
+      order: 1;
+    }
+
+    &--achievement {
+      order: 4;
+      margin-bottom: 56px;
+
+      .history-form__legend {
+        width: 430px;
+      }
+    }
+
+    &--contacts {
+      order: 3;
+      margin-bottom: 56px;
+
+      .history-form__legend {
+        display: block;
+        overflow: visible;
+        width: 260px;
+        height: auto;
+      }
+    }
+
+    &--app {
+      order: 2;
+      margin-bottom: 56px;
+    }
+
+    &--review {
+      order: 5;
+      text-align: center;
+
+      .history-form__legend {
+        width: 260px;
+      }
+    }
+  }
+
+  .history-form__legend {
+    position: static;
+    width: 360px;
+    margin: auto;
+  }
+
+  .history-form__user-item,
+  .history-form__contacts-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .history-form__label-user {
+    margin-left: 0;
+    margin-top: -8px;
+    margin-right: 18px;
+  }
+
+  .history-form__input-user {
+    width: 100%;
+  }
+
+  .history-form__contacts-list,
+  .history-form__achievement-list {
+    margin: 37px 58px 25px;
+  }
+
+  .history-form__achievement-list {
+    margin-top: 49px;
+    margin-bottom: 53px;
+  }
+
+  .history-form__label-achievement {
+    padding-left: 60px;
+  }
+
+  .history-form__contacts-item {
+    flex-direction: column;
+  }
+
+  .history-form__label-contacts {
+    order: 2;
+    align-self: flex-start;
+  }
+
+  .history-form__input-contacts {
+    order: 1;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 60px;
+      right: 0;
+      top: 0;
+      background-color: #e5e5e5;
+    }
+  }
+
+  .history-form__app-list {
+    margin-top: 50px;
+    margin-left: 58px;
+    margin-bottom: 60px;
+  }
+
+  .history-form__app-item {
+    margin-bottom: 45px;
+  }
+
+  .history-form__label-app {
+    padding-left: 60px;
+  }
+
+  .history-form__input-review {
+    width: 500px;
+    min-height: 193px;
+    margin-bottom: 48px;
+  }
+
+  .history-form__btns {
+    order: 6;
+    width: 620px;
+    margin-top: 27px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .history-form__submit {
+    width: 300px;
+  }
 }
