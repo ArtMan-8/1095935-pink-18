@@ -221,16 +221,21 @@
   }
 }
 
+.history-form__footnote-dop {
+  font-size: 0;
+}
+
 /*   tablet version   */
 
 @media ($mq-tablet) {
   .history-form {
-    margin-top: 70px;
+    width: 620px;
+    margin: 64px auto 0 auto;
   }
 
   .history-form__fieldset {
-    width: 616px;
-    margin: auto;
+    box-sizing: border-box;
+    width: 100%;
     margin-bottom: 40px;
     padding: 0;
     background-color: #ffffff;
@@ -241,6 +246,7 @@
 
     &--user {
       order: 1;
+      margin-bottom: 42px;
     }
 
     &--achievement {
@@ -254,7 +260,7 @@
 
     &--contacts {
       order: 3;
-      margin-bottom: 56px;
+      margin-bottom: 57px;
 
       .history-form__legend {
         display: block;
@@ -266,7 +272,7 @@
 
     &--app {
       order: 2;
-      margin-bottom: 56px;
+      margin-bottom: 57px;
     }
 
     &--review {
@@ -307,7 +313,7 @@
 
   .history-form__contacts-list,
   .history-form__achievement-list {
-    margin: 37px 58px 25px;
+    margin: 37px 58px 24px;
   }
 
   .history-form__achievement-list {
@@ -363,9 +369,9 @@
   }
 
   .history-form__app-list {
-    margin-top: 50px;
+    margin-top: 48px;
     margin-left: 58px;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
   }
 
   .history-form__app-item {
@@ -393,5 +399,117 @@
 
   .history-form__submit {
     width: 300px;
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .history-form {
+    width: 940px;
+    margin-top: 70px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .history-form__fieldset {
+    margin: 0;
+    margin-bottom: 57px;
+
+    &--user {
+      margin-top: 8px;
+      order: 1;
+      flex: 0 0 435px;
+    }
+
+    &--achievement {
+      order: 4;
+      height: 240px;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--app {
+      order: 2;
+      flex: 0 0 435px;
+    }
+
+    &--review {
+      order: 5;
+    }
+  }
+
+  .history-form__user-item {
+    margin-top: 5px;
+
+    &:not(:last-child) {
+      margin-bottom: 53px;
+    }
+  }
+
+  .history-form__label-user {
+    margin-top: 4px;
+  }
+
+  .history-form__input-user {
+    margin: 0;
+  }
+
+  .history-form__app-list {
+    margin-top: 50px;
+    margin-left: 72px;
+    margin-bottom: 30px;
+  }
+
+  .history-form__contacts-list {
+    margin-top: 34px;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .history-form__contacts-item {
+    flex: 1 0 372px;
+
+    &:nth-child(even) {
+      margin-left: 74px;
+    }
+
+    &:nth-child(n) {
+      margin-bottom: 13px;
+    }
+  }
+
+  .history-form__achievement-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  .history-form__achievement-item {
+
+  }
+
+  .history-form__input-review {
+    width: 820px;
+    min-height: 128px;
+    margin-top: 34px;
+    margin-bottom: 40px;
+  }
+
+  .history-form__btns {
+    width: 940px;
+    margin-top: 8px;
+    margin-bottom: -20px;
+  }
+
+  .history-form__footnote-dop {
+    font-size: inherit;
   }
 }

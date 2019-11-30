@@ -22,7 +22,7 @@
   }
 
   .page-main__invite-fill {
-    display: block;
+    display: inline-block;
     margin: 0;
     text-align: center;
     font-size: 18px;
@@ -35,5 +35,9 @@
   .page-main__text {
     width: 600px;
     font-size: 18px;
+  }
+
+  .page-main__offer--form .page-main__text {
+    width: 800px;
   }
 }
