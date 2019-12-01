@@ -112,6 +112,7 @@
   }
 
   .advantages__list {
+    min-height: 459px;
     padding-bottom: 28px;
     margin-bottom: 0;
 
@@ -120,7 +121,7 @@
       display: block;
       content: "";
       top: -25px;
-      margin-left: 20px;
+      margin-left: calc(20vw - 110px);
       width: 268px;
       height: 481px;
       background: transparent url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
@@ -128,8 +129,9 @@
   }
 
   .advantages__item {
-    width: 310px;
+    width: 47vw;
     margin-right: 0;
+    margin-left: auto;
     padding: 16px 20px 18px;
     text-align: left;
   }
@@ -161,7 +163,6 @@
   }
 
   .advantages__list {
-    margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

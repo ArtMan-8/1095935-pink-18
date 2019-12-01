@@ -226,7 +226,8 @@
 
 @media ($mq-desktop) {
   .upload-form {
-    width: 800px;
+    width: 84vw;
+    max-width: 860px;
     margin-bottom: 28px;
     padding: 57px 60px 40px 80px;
     background-color: $color-bg-light;

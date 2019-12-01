@@ -119,9 +119,10 @@
   }
 
   .tariffs__table {
-    width: 620px;
+    width: 94vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
     padding: 0 20px;
     left: 0;
     transform: none;
@@ -136,7 +137,7 @@
   }
 
   .tariffs__header {
-    width: 155px;
+    width: 25%;
     height: 81px;
 
     &--hit::before {
@@ -175,6 +176,10 @@
     left: 0;
     margin: auto;
   }
+
+  .tariffs__controls {
+    display: none;
+  }
 }
 
 /*   desktop version   */
@@ -186,12 +191,12 @@
   }
 
   .tariffs__table {
-    width: 940px;
+    width: 98vw;
+    max-width: 1200px;
     margin-top: 142px;
   }
 
   .tariffs__header {
-    width: 235px;
     height: 100px;
 
     &--hit::before {

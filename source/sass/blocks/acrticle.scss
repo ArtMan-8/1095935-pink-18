@@ -19,9 +19,7 @@
   background-color: #cccccc;
 
   &--panorama {
-    width: 320px;
-    margin-left: -20px;
-    // @include bg-stretch;
+    @include bg-stretch;
   }
 }
 
@@ -96,7 +94,8 @@
 
 @media ($mq-tablet) {
   .article__wrapper {
-    width: 620px;
+    width: 94vw;
+    max-width: 750px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +110,8 @@
     &--panorama {
       margin-top: 76px;
       margin-bottom: 50px;
-      width: 620px;
+      width: 94vw;
+      max-width: 750px;
 
       .article__text {
         margin-bottom: 8px;
@@ -124,7 +124,7 @@
     height: 300px;
 
     &--panorama {
-      width: 660px;
+      @include bg-stretch;
       height: 509px;
     }
   }
@@ -191,14 +191,16 @@
 
 @media ($mq-desktop) {
   .article__wrapper {
-    width: 940px;
+    width: 98vw;
+    max-width: 1000px;
   }
 
   .article {
     margin-bottom: 54px;
 
     &--panorama {
-      width: 940px;
+      width: 98vw;
+      max-width: 1000px;
       margin-top: 88px;
       margin-bottom: 50px;
 
@@ -212,7 +214,7 @@
     height: 400px;
 
     &--panorama {
-      width: 970px;
+      @include bg-stretch;
       height: 506px;
     }
   }

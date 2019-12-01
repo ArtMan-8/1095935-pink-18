@@ -85,6 +85,9 @@
 /*   desktop version   */
 
 @media ($mq-desktop) {
+  .reviews {
+    margin-bottom: 25px;
+  }
   .reviews__inner {
     width: 960px;
     padding-top: 60px;
@@ -139,5 +142,9 @@
 
   .reviews__who {
     font-size: 18px;
+  }
+
+  .reviews__controls{
+    display: none;
   }
 }
