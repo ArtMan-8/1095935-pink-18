@@ -21,12 +21,24 @@
 
 @media ($mq-tablet) {
   .upload-photo__title {
-    padding: 40px 20px 72px;
+    padding: 48px 20px 68px;
   }
 
   .upload-photo__header,
   .upload-photo__text {
     width: 430px;
     font-size: 18px;
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .upload-photo {
+    background-color: #ffffff;
+  }
+
+  .upload-photo__title {
+    padding: 8px 20px 64px;
   }
 }

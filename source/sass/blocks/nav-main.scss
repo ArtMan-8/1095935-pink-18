@@ -11,7 +11,8 @@
 
 .nav-main__item {
   display: block;
-  padding: 16px;
+  margin-bottom: 2px;
+  padding: 15px;
   width: 100%;
   text-align: center;
   box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
@@ -100,6 +101,17 @@
     box-shadow: none;
     padding: 0;
     margin-left: 80px;
+
+    &--current .nav-main__link {
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 9px;
+    }
+
+    &:not(.nav-main__item--current) .nav-main__link {
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
   }
 
   .nav-main__link {

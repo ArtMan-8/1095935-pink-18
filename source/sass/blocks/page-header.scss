@@ -47,7 +47,8 @@
 
   .page-header__inner {
     display: flex;
-    width: 940px;
+    min-width: 940px;
+    max-width: 1180px;
     margin: 27px 0 43px;
     padding-left: 10px;
     padding-right: 10px;

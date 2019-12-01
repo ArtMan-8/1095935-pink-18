@@ -19,11 +19,10 @@
     width: 490px;
     font-size: 18px;
     padding-top: 92px;
-    margin-bottom: 2px;
   }
 
   .page-main__invite-fill {
-    display: block;
+    display: inline-block;
     margin: 0;
     text-align: center;
     font-size: 18px;
@@ -31,3 +30,14 @@
 }
 
 /*   desktop version   */
+
+@media ($mq-desktop) {
+  .page-main__text {
+    width: 600px;
+    font-size: 18px;
+  }
+
+  .page-main__offer--form .page-main__text {
+    width: 800px;
+  }
+}

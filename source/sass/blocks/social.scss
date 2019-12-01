@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 180px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .social__link {
@@ -17,6 +17,8 @@
   justify-content: center;
   align-items: center;
 
+  fill: $color-main;
+
   &:hover {
     border-color: $color-main-text;
   }
@@ -24,10 +26,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.social__icon {
-  fill: $color-main;
 }
 
 /*   tablet version   */

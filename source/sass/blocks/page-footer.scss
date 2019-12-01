@@ -56,6 +56,9 @@
 
 @media ($mq-desktop) {
   .page-footer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 65px 10px;
   }
 }
