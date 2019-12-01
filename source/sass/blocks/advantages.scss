@@ -34,15 +34,10 @@
   background-color: $color-bg-light;
   text-align: center;
 
-  &::before {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: url("../img/bg-triangle-white.svg") no-repeat center top;
-    background-size: 100%;
-  }
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
 
   &::after {
     display: block;
@@ -163,6 +158,8 @@
   }
 
   .advantages__list {
+    padding: 0 calc((100vw - 960px) / 2) 28px;
+
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

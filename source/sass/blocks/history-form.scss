@@ -21,6 +21,16 @@
     width: 87vw;
     padding: 33px 6vw 27px;
   }
+
+  &--user .history-form__legend {
+    visibility: hidden;
+    font-size: 0;
+  }
+
+  &--contacts .history-form__legend {
+    visibility: hidden;
+    font-size: 0;
+  }
 }
 
 .history-form__legend {
@@ -237,13 +247,13 @@
   .history-form {
     width: 94vw;
     max-width: 750px;
-    margin: 64px auto 0 auto;
+    margin: 48px auto 0 auto;
   }
 
   .history-form__fieldset {
     box-sizing: border-box;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     padding: 0;
     background-color: #ffffff;
 
@@ -253,7 +263,6 @@
 
     &--user {
       order: 1;
-      margin-bottom: 42px;
     }
 
     &--achievement {
@@ -270,10 +279,8 @@
       margin-bottom: 57px;
 
       .history-form__legend {
-        display: block;
-        overflow: visible;
-        width: 260px;
-        height: auto;
+        visibility: visible;
+        font-size: 14px;
       }
     }
 
@@ -370,7 +377,7 @@
     }
   }
 
-  .history-form__input-contacts{
+  .history-form__input-contacts {
     width: 100%;
     margin: 0;
   }
@@ -415,7 +422,7 @@
   .history-form {
     width: 98vw;
     max-width: 1100px;
-    margin-top: 70px;
+    margin-top: 52px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -445,6 +452,7 @@
       order: 2;
       flex: 0 0 45vw;
       max-width: 515px;
+      margin-top: 20px;
     }
 
     &--review {
@@ -503,7 +511,6 @@
   }
 
   .history-form__achievement-item {
-
     &:nth-child(n+7) {
       display: none;
     }

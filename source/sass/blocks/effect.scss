@@ -20,7 +20,6 @@
   .effect__timer {
     position: relative;
     width: 240px;
-    margin-left: calc(20vw - 130px);
 
     &::before {
       position: absolute;
@@ -46,7 +45,6 @@
     margin-top: 16px;
     margin-right: 10px;
     width: 46vw;
-    // width: 300px;
   }
 
   .effect__header {
