@@ -117,6 +117,16 @@
       background: transparent url("../img/icon-review-arrow-right.svg") no-repeat center;
       right: -125px;
     }
+
+    &:hover::before,
+    &:hover::after {
+      opacity: 0.6;
+    }
+
+    &:active::before,
+    &:active::after {
+      opacity: 0.1;
+    }
   }
 
   .reviews__text {

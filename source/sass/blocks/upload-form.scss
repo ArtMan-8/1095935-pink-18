@@ -187,6 +187,10 @@
 
     .upload-form__tool-svg {
       fill: $color-main;
+
+      &:hover {
+        fill: rgba(40, 54, 69, 0.5);
+      }
     }
 
     &:not(.upload-form__tool--current) .upload-form__control {

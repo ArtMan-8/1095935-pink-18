@@ -494,6 +494,13 @@
 
   .history-form__achievement-item {
 
+    &:nth-child(n+7) {
+      display: none;
+    }
+
+    &:last-child {
+      margin-bottom: 52px;
+    }
   }
 
   .history-form__input-review {

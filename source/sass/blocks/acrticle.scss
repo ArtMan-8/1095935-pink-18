@@ -82,6 +82,14 @@
     top: 1px;
     background: transparent url("../img/icon-heart.svg") no-repeat center;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 /*   tablet version   */
@@ -204,7 +212,7 @@
     height: 400px;
 
     &--panorama {
-      width: 980px;
+      width: 970px;
       height: 506px;
     }
   }
