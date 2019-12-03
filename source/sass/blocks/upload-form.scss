@@ -28,11 +28,11 @@
     fill: $color-main;
   }
 
-  &:not(.upload-form__tool--current):hover .upload-form__tool-svg {
+  &:not(.upload-form__tool--current) .upload-form__tool-svg:hover {
     fill: rgba(40, 54, 69, 0.5);
   }
 
-  &:not(.upload-form__tool--current):active .upload-form__tool-svg {
+  &:not(.upload-form__tool--current) .upload-form__tool-svg:active {
     fill: $color-main;
   }
 
@@ -185,16 +185,23 @@
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-    .upload-form__tool-svg {
-      fill: $color-main;
-
-      &:hover {
-        fill: rgba(40, 54, 69, 0.5);
-      }
-    }
-
     &:not(.upload-form__tool--current) .upload-form__control {
       display: block;
+    }
+
+    &--current,
+    &:not(.upload-form__tool--current) {
+      .upload-form__tool-svg {
+        fill: $color-main;
+
+        &:hover {
+          fill: rgba(40, 54, 69, 0.5);
+        }
+
+        &:active {
+          fill: $color-main;
+        }
+      }
     }
 
     &--crop .upload-form__toggle {

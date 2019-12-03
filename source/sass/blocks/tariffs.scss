@@ -23,7 +23,7 @@
 
 .tariffs__table {
   position: relative;
-  margin-top: 87px;
+  margin-top: 89px;
   margin-bottom: 34px;
   border-collapse: collapse;
   width: 262%;
@@ -50,23 +50,39 @@
   box-sizing: border-box;
   position: relative;
   width: 276px;
-  height: 100px;
+  padding: 19px;
+  border-top-color: $color-main-text;
+  border-bottom-color: $color-main-text;
   background-color: $color-main-text;
   background-clip: padding-box;
-  overflow: hidden;
+
+  &:nth-child(2) {
+    border-left-color: $color-main-text;
+  }
+
+  &:last-child {
+    border-right-color: $color-main-text;
+  }
 
   &--hit::before {
+    background-image: url("../img/bg-hit.svg");
     position: absolute;
-    display: block;
-    width: 110px;
-    height: 29px;
-    left: -29px;
-    top: 10px;
-    content: "ХИТ";
+    content: "";
+    width: 74px;
+    height: 73px;
+    left: -2px;
+    top: -2px;
+  }
+
+  &--hit::after {
+    position: absolute;
+    content: "хит";
+    text-transform: uppercase;
+    left: 11px;
+    top: 11px;
+    transform: rotate(-45deg);
 
     @include text(14px, 400, 24px, #ffffff);
-    background-color: $color-main;
-    transform: rotate(-45deg);
   }
 }
 
@@ -84,9 +100,10 @@
 .tariffs__item {
   position: relative;
   box-sizing: border-box;
-  height: 60px;
+  height: 61px;
   text-align: left;
   padding: 0 20px;
+  background-clip: padding-box;
 
   @include text(14px, 400, 30px, $color-main-text);
   text-transform: uppercase;
@@ -122,7 +139,7 @@
     width: 94vw;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
     padding: 0 20px;
     left: 0;
     transform: none;
@@ -138,17 +155,25 @@
 
   .tariffs__header {
     width: 25%;
-    height: 81px;
+    padding: 9px 0 5px;
 
     &--hit::before {
-      left: -34px;
+      background-image: url("../img/bg-hit-tablet.svg");
+      width: 61px;
+      height: 61px;
+      left: 0;
+      top: -2px;
+    }
+
+    &--hit::after {
+      left: 6px;
       top: 6px;
     }
   }
 
   .tariffs__title {
     font-size: 16px;
-    margin-top: 6px;
+    margin-top: 2px;
   }
 
   .tariffs__cost {
@@ -186,8 +211,8 @@
 
 @media ($mq-desktop) {
   .tariffs__inner {
-    margin-top: -20px;
-    padding-bottom: 30px;
+    margin-top: -17px;
+    padding-bottom: 27px;
   }
 
   .tariffs__table {
@@ -197,11 +222,19 @@
   }
 
   .tariffs__header {
-    height: 100px;
+    height: 96px;
 
     &--hit::before {
-      left: -28px;
-      top: 12px;
+      background-image: url("../img/bg-hit.svg");
+      width: 74px;
+      height: 73px;
+      left: 0;
+      top: -2px;
+    }
+
+    &--hit::after {
+      left: 11px;
+      top: 11px;
     }
   }
 
@@ -220,6 +253,6 @@
   }
 
   .tariffs__item {
-    height: 60px;
+    height: 61px;
   }
 }

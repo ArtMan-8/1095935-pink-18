@@ -250,6 +250,13 @@
     margin: 48px auto 0 auto;
   }
 
+  .history-form__legend {
+    position: static;
+    width: auto;
+    margin: auto;
+    padding: 0 32px;
+  }
+
   .history-form__fieldset {
     box-sizing: border-box;
     width: 100%;
@@ -268,10 +275,6 @@
     &--achievement {
       order: 4;
       margin-bottom: 56px;
-
-      .history-form__legend {
-        width: 430px;
-      }
     }
 
     &--contacts {
@@ -287,6 +290,10 @@
     &--app {
       order: 2;
       margin-bottom: 57px;
+
+      .history-form__legend {
+        padding: 0 25px;
+      }
     }
 
     &--review {
@@ -294,15 +301,9 @@
       text-align: center;
 
       .history-form__legend {
-        width: 260px;
+        padding: 0 38px;
       }
     }
-  }
-
-  .history-form__legend {
-    position: static;
-    width: 360px;
-    margin: auto;
   }
 
   .history-form__user-item,
