@@ -54,11 +54,10 @@
 
 .contacts__map {
   height: 200px;
-  background-color: $color-bg-light;
-  background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center top, center 95px, center bottom;
-  background-size: auto 33px, auto, auto;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat center top / auto 33px, url("../img/icon-map-marker.svg") no-repeat center 95px, $color-bg-light url("../img/bg-map-mobile@1x.png") no-repeat center bottom;
+  @media ($dppx-2) {
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat center top / auto 33px, url("../img/icon-map-marker.svg") no-repeat center 95px, $color-bg-light url("../img/bg-map-mobile@2x.jpg") no-repeat center bottom / 320px 645px;
+  }
 }
 
 /*   tablet version   */
@@ -94,9 +93,10 @@
 
   .contacts__map {
     height: 370px;
-    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
-    background-position: top, center 190px, center -350px;
-    background-size: auto 66px, auto, auto;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat center top / auto 66px, url("../img/icon-map-marker.svg") no-repeat center 190px, $color-bg-light url("../img/bg-map-tablet@1x.jpg") no-repeat center -350px;
+    @media ($dppx-2) {
+      background: url("../img/bg-triangle-white-footer.svg") no-repeat center top / auto 66px, url("../img/icon-map-marker.svg") no-repeat center 190px, $color-bg-light url("../img/bg-map-tablet@2x.jpg") no-repeat center -350px / 700px 848px;
+    }
   }
 }
 
@@ -138,8 +138,9 @@
 
   .contacts__map {
     height: 490px;
-    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
-    background-position: top, center 250px, center -290px;
-    background-size: auto 100px, auto, auto;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat top center / auto 100px, url("../img/icon-map-marker.svg") no-repeat center 250px / auto, $color-bg-light url("../img/bg-map-desktop@1x.jpg") no-repeat center -290px;
+    @media ($dppx-2) {
+      background: url("../img/bg-triangle-white-footer.svg") no-repeat top center / auto 100px, url("../img/icon-map-marker.svg") no-repeat center 250px / auto, $color-bg-light url("../img/bg-map-desktop@2x.jpg") no-repeat center -290px / 1200px 976px;
+    }
   }
 }
