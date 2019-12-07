@@ -99,7 +99,7 @@
     width: 690px;
     margin: auto;
     padding-top: 96px;
-    background: transparent url("../img/icon-quotes.svg") no-repeat center top;
+    background: transparent url("../img/svg/icon-quotes.svg") no-repeat center top;
 
     &::before,
     &::after {
@@ -113,12 +113,12 @@
     }
 
     &::before {
-      background: transparent url("../img/icon-review-arrow-left.svg") no-repeat center;
+      background: transparent url("../img/svg/icon-review-arrow-left.svg") no-repeat center;
       left: -125px;
     }
 
     &::after {
-      background: transparent url("../img/icon-review-arrow-right.svg") no-repeat center;
+      background: transparent url("../img/svg/icon-review-arrow-right.svg") no-repeat center;
       right: -125px;
     }
 
