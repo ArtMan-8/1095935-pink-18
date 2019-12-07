@@ -47,7 +47,11 @@
     <div class="article__wrapper">
       <article class="article article--panorama">
         <a href="#" class="article__link">
-          <img class="article__img article__img--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама с высокого моста">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="article__img article__img--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg x2" alt="Панорама с высокого моста">
+          </picture>
           <span class="article__type">Панорама дня</span>
         </a>
 
@@ -66,7 +70,11 @@
 
       <article class="article">
         <a href="#" class="article__link">
-          <img class="article__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотоаппарат на штативе, напротив машины">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+            <img class="article__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотоаппарат на штативе, напротив машины">
+          </picture>
         </a>
 
         <div class="article__inner">
@@ -84,7 +92,11 @@
 
       <article class="article">
         <a href="#" class="article__link">
-          <img class="article__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+            <img class="article__img" src="img/photo-drumset-mobile@1x.jpg" src="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
+          </picture>
         </a>
 
         <div class="article__inner">
@@ -102,7 +114,11 @@
 
       <article class="article">
         <a href="#" class="article__link">
-          <img class="article__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Облака за стеклянным потолком">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+            <img class="article__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Облака за стеклянным потолком">
+          </picture>
         </a>
 
         <div class="article__inner">
@@ -120,7 +136,11 @@
 
       <article class="article">
         <a href="#" class="article__link">
-          <img class="article__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка под шатром">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+            <img class="article__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Ярмарка под шатром">
+          </picture>
         </a>
 
         <div class="article__inner">
@@ -138,7 +158,11 @@
 
       <article class="article">
         <a href="#" class="article__link">
-          <img class="article__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Пейзаж на фоне ног в сандалях">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+            <img class="article__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Пейзаж на фоне ног в сандалях">
+          </picture>
         </a>
 
         <div class="article__inner">
@@ -156,7 +180,11 @@
 
       <article class="article">
         <a href="#" class="article__link">
-          <img class="article__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолёта в небе, на закате дня">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+            <img class="article__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Крыло самолёта в небе, на закате дня">
+          </picture>
         </a>
 
         <div class="article__inner">
@@ -180,7 +208,11 @@
       </div>
 
       <form class="upload-form" action="https://echo.htmlacademy.ru" method="GET">
-        <img class="upload-form__photo" src="img/photo-road-mobile@1x.jpg" alt="Загруженное фото" width="280" height="374">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+          <img class="upload-form__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное фото">
+        </picture>
 
         <div class="upload-form__inner">
           <div class="upload-form__tools">

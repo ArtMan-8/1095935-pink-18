@@ -17,9 +17,12 @@
 .article__img {
   display: block;
   background-color: #cccccc;
+  width: 280px;
+  height: 180px;
 
   &--panorama {
     @include bg-stretch;
+    min-width: 320px;
   }
 }
 
@@ -125,7 +128,7 @@
 
     &--panorama {
       @include bg-stretch;
-      height: 509px;
+      min-width: 700px;
     }
   }
 
@@ -215,7 +218,7 @@
 
     &--panorama {
       @include bg-stretch;
-      height: 506px;
+      width: 1200px;
     }
   }
 
