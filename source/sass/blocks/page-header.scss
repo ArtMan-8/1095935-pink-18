@@ -7,13 +7,22 @@
 .page-header__logo-link {
   display: inline-block;
   vertical-align: middle;
-  width: 75px;
-  height: 22px;
+  width: 147px;
+  height: 40px;
   cursor: pointer;
-  margin: 22px 20px;
+  margin: 22px 20px 5px;
 }
 
 .page-header__logo-svg {
+  &--mobile {
+    display: inline;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
   fill: #ffffff;
 
   &:hover {
@@ -21,8 +30,7 @@
   }
 
   &:active {
-    fill: #ffffff;
-    opacity: 0.3;
+    fill: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -30,9 +38,18 @@
 
 @media ($mq-tablet) {
   .page-header__logo-link {
-    width: 147px;
-    height: 40px;
-    margin: 27px 20px 38px;
+    margin: 25px 20px 40px;
+  }
+
+  .page-header__logo-svg {
+    &--tablet {
+      display: inline;
+    }
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
   }
 }
 
@@ -60,5 +77,16 @@
 
   .page-header__logo-link {
     margin: 0;
+  }
+
+  .page-header__logo-svg {
+    &--desktop {
+      display: inline;
+    }
+
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
   }
 }
