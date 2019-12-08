@@ -54,20 +54,8 @@
 .app__link {
   font-size: 0;
   background: transparent no-repeat center;
-  width: 47px;
+  width: 46px;
   height: 56px;
-
-  &--apple {
-    background-image: url("../img/svg/logo-apple.svg");
-  }
-
-  &--android {
-    background-image: url("../img/svg/logo-android.svg");
-  }
-
-  &--windows {
-    background-image: url("../img/svg/logo-microsoft.svg");
-  }
 }
 
 .app__text {
