@@ -16,7 +16,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: url("../img/bg-triangle-white.svg") no-repeat center top;
+    background: url("../img/svg/bg-triangle-white.svg") no-repeat center top;
     background-size: 100%;
   }
 }
@@ -65,7 +65,7 @@
   }
 
   &--hit::before {
-    background-image: url("../img/bg-hit.svg");
+    background-image: url("../img/svg/bg-hit.svg");
     position: absolute;
     content: "";
     width: 74px;
@@ -120,11 +120,11 @@
   background: transparent no-repeat center;
 
   &--on {
-    background-image: url("../img/icon-yes-green.svg");
+    background-image: url("../img/svg/icon-yes-green.svg");
   }
 
   &--off {
-    background-image: url("../img/icon-no.svg");
+    background-image: url("../img/svg/icon-no.svg");
   }
 }
 
@@ -158,7 +158,7 @@
     padding: 9px 0 5px;
 
     &--hit::before {
-      background-image: url("../img/bg-hit-tablet.svg");
+      background-image: url("../img/svg/bg-hit-tablet.svg");
       width: 61px;
       height: 61px;
       left: 0;
@@ -225,7 +225,7 @@
     height: 96px;
 
     &--hit::before {
-      background-image: url("../img/bg-hit.svg");
+      background-image: url("../img/svg/bg-hit.svg");
       width: 74px;
       height: 73px;
       left: 0;

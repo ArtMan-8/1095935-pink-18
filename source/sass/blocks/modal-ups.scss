@@ -1,0 +1,129 @@
+.modal-ups {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &--error {
+    // display: flex;
+  }
+
+  &--success {
+    // display: flex;
+
+    .modal-ups__control {
+      margin-top: -10px;
+      padding: 50px 20px;
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.modal-ups__inner {
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+  width: 320px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.modal-ups__content {
+  padding: 38px 20px 0;
+}
+
+.modal-ups__header {
+  @include text(18px, 700, 24px, #000000);
+  @include reset-mg-text;
+  margin-bottom: 26px;
+}
+
+.modal-ups__message {
+  @include text(14px, 400, 24px, $color-main-text);
+  @include reset-mg-text;
+  margin-bottom: 38px;
+}
+
+.modal-ups__control {
+  padding: 0 20px 48px;
+}
+
+.modal-ups__btn {
+  @include btn(100%, 63px);
+  @include text(18px, 700, 30px, #ffffff);
+  padding-top: 14px;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+}
+
+/*   tablet version   */
+
+@media ($mq-tablet) {
+  .modal-ups {
+    &--success {
+      .modal-ups__content {
+        padding: 40px 76px 0;
+      }
+
+      .modal-ups__control {
+        padding: 50px 82px;
+      }
+    }
+  }
+
+  .modal-ups__inner {
+    width: 460px;
+  }
+
+  .modal-ups__content {
+    padding: 40px 80px 0;
+  }
+
+  .modal-ups__header {
+    @include text(30px, 700, 40px, #000000);
+  }
+
+  .modal-ups__message {
+    font-size: 18px;
+  }
+
+  .modal-ups__control {
+    padding: 0 80px 52px;
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .modal-ups {
+    &--success {
+      .modal-ups__content {
+        padding: 40px 190px 0;
+        margin-bottom: 50px;
+      }
+
+      .modal-ups__control {
+        padding: 46px 162px;
+      }
+    }
+  }
+
+  .modal-ups__inner {
+    width: 780px;
+    border-radius: 5px;
+  }
+
+  .modal-ups__content {
+    padding: 40px 200px 0;
+    margin-bottom: 56px;
+  }
+
+  .modal-ups__control {
+    padding: 50px 240px;
+    background-color: #f2f2f2;
+  }
+}

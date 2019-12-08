@@ -16,8 +16,12 @@
 .page-footer__logo-svg {
   fill: #000000;
 
+  &:hover {
+    fill: $color-main;
+  }
+
   &:active {
-    fill: currentColor;
+    fill: #000000;
     opacity: 0.3;
   }
 }

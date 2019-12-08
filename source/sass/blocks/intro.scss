@@ -1,7 +1,10 @@
 .intro {
   position: relative;
-  background: #17212d url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-position: center -68px;
+  background: #17212d url("../img/bg-back-mobile@1x.jpg") no-repeat center -68px;
+
+  @media ($dppx-2) {
+    background: #17212d url("../img/bg-back-mobile@2x.jpg") no-repeat center -68px / auto 462px;
+  }
 
   &--index::before {
     display: block;
@@ -10,6 +13,10 @@
     margin: auto;
     height: 395px;
     background: transparent url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
+
+    @media ($dppx-2) {
+      background: transparent url("../img/iphone-hand-mobile@2x.png") no-repeat left bottom / 258px 286px;
+    }
   }
 
   &--photo {
@@ -42,6 +49,10 @@
   .intro {
     background: #17212d url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
 
+    @media ($dppx-2) {
+      background: #17212d url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom / auto 729px;
+    }
+
     &--index {
       background-position: center -110px;
 
@@ -49,6 +60,10 @@
         width: auto;
         height: 620px;
         background: transparent url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom;
+
+        @media ($dppx-2) {
+          background: transparent url("../img/iphone-hand-tablet@2x.png") no-repeat center bottom / 700px 545px;
+        }
       }
     }
 
@@ -81,6 +96,10 @@
   .intro {
     background: #17212d url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
 
+    @media ($dppx-2) {
+      background: #17212d url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom / auto 863px;
+    }
+
     &--index {
       background-position: center top;
 
@@ -88,6 +107,10 @@
         width: 960px;
         height: 854px;
         background: transparent url("../img/iphone-hand-desktop@1x.png") no-repeat 25px bottom;
+
+        @media ($dppx-2) {
+          background: transparent url("../img/iphone-hand-desktop@2x.png") no-repeat 25px bottom / auto 645px;
+        }
       }
     }
 

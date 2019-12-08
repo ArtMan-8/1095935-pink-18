@@ -17,9 +17,12 @@
 .article__img {
   display: block;
   background-color: #cccccc;
+  width: 280px;
+  height: 180px;
 
   &--panorama {
     @include bg-stretch;
+    min-width: 320px;
   }
 }
 
@@ -78,7 +81,7 @@
     height: 13px;
     left: 0;
     top: 1px;
-    background: transparent url("../img/icon-heart.svg") no-repeat center;
+    background: transparent url("../img/svg/icon-heart.svg") no-repeat center;
   }
 
   &:hover {
@@ -125,7 +128,7 @@
 
     &--panorama {
       @include bg-stretch;
-      height: 509px;
+      min-width: 700px;
     }
   }
 
@@ -172,7 +175,7 @@
       height: 13px;
       right: 6px;
       top: 6px;
-      background: transparent url("../img/icon-heart.svg") no-repeat center;
+      background: transparent url("../img/svg/icon-heart.svg") no-repeat center;
     }
   }
 
@@ -215,7 +218,7 @@
 
     &--panorama {
       @include bg-stretch;
-      height: 506px;
+      width: 1200px;
     }
   }
 

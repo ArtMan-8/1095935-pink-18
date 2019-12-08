@@ -12,12 +12,17 @@
   padding-left: 0;
 }
 
+@mixin reset-mg-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @mixin btn($width, $height) {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
   width: $width;
-  height: $height;
+  min-height: $height;
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -25,13 +30,8 @@
 
 @mixin bg-stretch {
   position: relative;
-  width: 100vw;
-  min-width: 320px;
-  height: auto;
   left: 50%;
   transform: translateX(-50%);
-  // left: 50%;
-  // right: 50%;
-  // margin-left: -50vw;
-  // margin-right: -50vw;
+  width: 100vw;
+  height: auto;
 }
