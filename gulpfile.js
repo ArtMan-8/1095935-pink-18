@@ -28,7 +28,6 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
 });
 
 gulp.task("images", function () {
@@ -67,7 +66,6 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    // "source/img/**/*",
     "source/js/**/*",
     "source/*.ico"
   ], {
