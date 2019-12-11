@@ -19,7 +19,9 @@
 
   .effect__timer {
     position: relative;
-    width: 240px;
+    width: 238px;
+    height: 276px;
+    background: url("../img/svg/icon-timer.svg") no-repeat center / 100%;
 
     &::before {
       position: absolute;
@@ -38,6 +40,12 @@
       content: "24";
       left: 64px;
       top: 78px;
+    }
+  }
+
+  .effect__clock {
+    &--desktop {
+      display: none;
     }
   }
 
@@ -87,8 +95,33 @@
   }
 
   .effect__timer {
-    width: 300px;
+    width: 298px;
     height: 345px;
+    margin-left: -8px;
+
+    &::before {
+      width: 220px;
+      height: 220px;
+      left: 20px;
+      top: 69px;
+      border: 17px solid $color-main;
+    }
+
+    &::after {
+      @include text(120px, 700, 187px, $color-main);
+      left: 78px;
+      top: 94px;
+    }
+  }
+
+  .effect__clock {
+    &--desktop {
+      display: inline;
+    }
+
+    &--tablet {
+      display: none;
+    }
   }
 
   .effect__research {
