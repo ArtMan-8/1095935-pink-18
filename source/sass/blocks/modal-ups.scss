@@ -55,10 +55,18 @@
 .modal-ups__btn {
   @include btn(100%, 63px);
   @include text(18px, 700, 30px, #ffffff);
-  padding-top: 14px;
   text-transform: uppercase;
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
+
+  &:hover {
+    background-color: #1c9b5e;
+    border: 2px solid #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 /*   tablet version   */
