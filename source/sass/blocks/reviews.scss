@@ -55,7 +55,7 @@
   .reviews__inner {
     width: 660px;
     margin: auto;
-    padding-top: 15px;
+    padding-top: 20px;
   }
 
   .reviews__item {
@@ -100,37 +100,38 @@
     margin: auto;
     padding-top: 96px;
     background: transparent url("../img/svg/icon-quotes.svg") no-repeat center top;
+  }
 
-    &::before,
-    &::after {
-      position: absolute;
-      display: block;
-      content: "";
-      width: 22px;
-      height: 41px;
-      top: 140px;
-      opacity: 0.3;
-    }
+  .reviews__prev,
+  .reviews__next {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 22px;
+    height: 41px;
+    top: 140px;
+    opacity: 0.3;
+  }
 
-    &::before {
-      background: transparent url("../img/svg/icon-review-arrow-left.svg") no-repeat center;
-      left: -125px;
-    }
 
-    &::after {
-      background: transparent url("../img/svg/icon-review-arrow-right.svg") no-repeat center;
-      right: -125px;
-    }
+  .reviews__prev {
+    background: transparent url("../img/svg/icon-review-arrow-left.svg") no-repeat center;
+    left: -125px;
+  }
 
-    &:hover::before,
-    &:hover::after {
-      opacity: 0.6;
-    }
+  .reviews__next {
+    background: transparent url("../img/svg/icon-review-arrow-right.svg") no-repeat center;
+    right: -125px;
+  }
 
-    &:active::before,
-    &:active::after {
-      opacity: 0.1;
-    }
+  .reviews__prev:hover,
+  .reviews__next:hover {
+    opacity: 0.6;
+  }
+
+  .reviews__prev:active,
+  .reviews__next:active {
+    opacity: 0.1;
   }
 
   .reviews__text {

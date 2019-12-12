@@ -17,6 +17,10 @@
 .page-footer__logo-svg {
   fill: #000000;
 
+  &--desktop {
+    display: none;
+  }
+
   &:hover {
     fill: $color-main;
   }
@@ -65,5 +69,15 @@
     margin-left: auto;
     margin-right: auto;
     padding: 65px 10px;
+  }
+
+  .page-footer__logo-svg {
+    &--desktop {
+      display: inline;
+    }
+
+    &--mobile {
+      display: none;
+    }
   }
 }
