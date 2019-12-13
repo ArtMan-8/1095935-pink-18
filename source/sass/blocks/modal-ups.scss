@@ -1,3 +1,12 @@
+@keyframes modal-open {
+  from {
+    margin-top: -1500px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
 .modal-ups {
   position: fixed;
   top: 0;
@@ -19,6 +28,7 @@
 
   &--open {
     display: flex;
+    animation: modal-open 0.7s ease;
   }
 }
 

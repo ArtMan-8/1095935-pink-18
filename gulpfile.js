@@ -72,8 +72,8 @@ gulp.task("html", function () {
 gulp.task("js", function () {
   return gulp.src("source/js**/*.js")
     .pipe(uglify())
-    .pipe(concat("script.js"))
-    .pipe(gulp.dest("build/js"));
+    // .pipe(concat("script.js"))
+    .pipe(gulp.dest("build"));
 })
 
 gulp.task("copy", function () {
