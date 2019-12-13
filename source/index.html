@@ -7,10 +7,8 @@
   <title>HTML Academy: Пинк</title>
 
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" sizes="32x32" href="favicon.ico">
-
-  <script>document.createElement( "picture" );</script>
-  <script src="js/picturefill.js" async=""></script>
 </head>
 <body>
   <div style="display: none">
@@ -112,8 +110,6 @@
               <span class="reviews__who">25 лет, водитель трамвая</span>
             </div>
             <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-            <a class="reviews__prev"></a>
-            <a class="reviews__next"></a>
           </li>
           <li class="reviews__item reviews__item--two">
             <div class="reviews__title">
@@ -121,8 +117,6 @@
               <span class="reviews__who">25 лет, водитель трамвая</span>
             </div>
             <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-            <a class="reviews__prev"></a>
-            <a class="reviews__next"></a>
           </li>
           <li class="reviews__item reviews__item--three">
             <div class="reviews__title">
@@ -130,15 +124,16 @@
               <span class="reviews__who">25 лет, водитель трамвая</span>
             </div>
             <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-            <a class="reviews__prev"></a>
-            <a class="reviews__next"></a>
           </li>
         </ul>
 
         <div class="reviews__controls controls">
-          <a class="controls__toggle controls__toggle--one controls__toggle--current"></a>
-          <a class="controls__toggle controls__toggle--two"></a>
-          <a class="controls__toggle controls__toggle--three"></a>
+          <a class="controls__toggle controls__toggle--current"></a>
+          <a class="controls__toggle"></a>
+          <a class="controls__toggle"></a>
+
+          <a class="controls__arrow controls__arrow--left"></a>
+          <a class="controls__arrow controls__arrow--right"></a>
         </div>
       </div>
     </section>
@@ -250,7 +245,7 @@
         </div>
       </div>
 
-      <div class="contacts__map">
+      <div id="map" class="contacts__map">
         <iframe src="https://yandex.ru/map-widget/v1/-/CGhaEHyM" tabindex="-1"></iframe>
         <div class="contacts__maps">
           <div class="contacts__marker"></div>
@@ -296,5 +291,7 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/picturefill.js" async></script>
 </body>
 </html>

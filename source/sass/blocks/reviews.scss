@@ -1,4 +1,5 @@
 .reviews {
+  position: relative;
   background-color: #ffffff;
   padding: 12px 0;
 }
@@ -102,38 +103,6 @@
     background: transparent url("../img/svg/icon-quotes.svg") no-repeat center top;
   }
 
-  .reviews__prev,
-  .reviews__next {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 22px;
-    height: 41px;
-    top: 140px;
-    opacity: 0.3;
-  }
-
-
-  .reviews__prev {
-    background: transparent url("../img/svg/icon-review-arrow-left.svg") no-repeat center;
-    left: -125px;
-  }
-
-  .reviews__next {
-    background: transparent url("../img/svg/icon-review-arrow-right.svg") no-repeat center;
-    right: -125px;
-  }
-
-  .reviews__prev:hover,
-  .reviews__next:hover {
-    opacity: 0.6;
-  }
-
-  .reviews__prev:active,
-  .reviews__next:active {
-    opacity: 0.1;
-  }
-
   .reviews__text {
     @include text(18px, 400, 30px, $color-main-text);
   }
@@ -144,9 +113,5 @@
 
   .reviews__who {
     font-size: 18px;
-  }
-
-  .reviews__controls {
-    display: none;
   }
 }

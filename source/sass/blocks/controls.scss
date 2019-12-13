@@ -42,4 +42,45 @@
     opacity: 1;
     background-color: #ffffff;
   }
+
+  .controls__arrow {
+    display: none;
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .controls__toggle {
+    display: none;
+  }
+
+  .controls__arrow {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 41px;
+    top: 215px;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &--left {
+      background: transparent url("../img/svg/icon-review-arrow-left.svg") no-repeat center;
+      margin-left: -912px;
+    }
+
+    &--right {
+      background: transparent url("../img/svg/icon-review-arrow-right.svg") no-repeat center;
+      margin-right: -912px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
 }

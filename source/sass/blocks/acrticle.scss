@@ -23,6 +23,7 @@
   &--panorama {
     @include bg-stretch;
     min-width: 320px;
+    min-height: 137px;
   }
 }
 
@@ -129,6 +130,7 @@
     &--panorama {
       @include bg-stretch;
       min-width: 700px;
+      min-height: 509px;
     }
   }
 
