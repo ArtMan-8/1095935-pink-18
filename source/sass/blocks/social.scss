@@ -12,6 +12,7 @@
   height: 46px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
+  font-size: 0;
 
   display: flex;
   justify-content: center;
@@ -25,6 +26,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
   }
 }
 

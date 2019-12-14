@@ -44,6 +44,11 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 30px;
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
+  }
 }
 
 .nav-main__toggle {

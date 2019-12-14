@@ -7,7 +7,6 @@
   }
 
   &--index {
-
     &::before {
       display: block;
       content: "";
@@ -102,6 +101,7 @@
 
     &--index {
       padding-top: 110px;
+
       &::before {
         width: 960px;
         height: 854px;

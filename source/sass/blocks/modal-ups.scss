@@ -2,6 +2,7 @@
   from {
     margin-top: -1500px;
   }
+
   to {
     margin-top: 0;
   }
@@ -76,6 +77,11 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
   }
 }
 

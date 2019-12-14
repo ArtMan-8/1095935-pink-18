@@ -77,6 +77,11 @@
     &:active {
       color: rgba(40, 54, 69, 0.3);
     }
+
+    &:focus {
+      box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+      outline: none;
+    }
   }
 }
 

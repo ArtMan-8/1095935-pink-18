@@ -24,6 +24,11 @@
   height: 40px;
   cursor: pointer;
   margin: 21px 20px 5px;
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
+  }
 }
 
 .page-header__logo-svg {

@@ -89,6 +89,13 @@
   }
 }
 
+.upload-form__input-tool {
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
+  }
+}
+
 .upload-form__btns {
   padding: 35px 0 10px;
   text-align: center;
@@ -114,6 +121,11 @@
   &:active {
     color: rgba(0, 0, 0, 1);
     border-color: rgba(0, 0, 0, 1);
+  }
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
   }
 
   &--submit {
