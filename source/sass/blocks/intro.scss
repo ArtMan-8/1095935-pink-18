@@ -7,7 +7,6 @@
   }
 
   &--index {
-    margin-top: -66px;
 
     &::before {
       display: block;
@@ -24,15 +23,13 @@
   }
 
   &--photo {
-    padding-top: 30px;
+    padding-top: 96px;
     padding-bottom: 84px;
-    background-position: center -66px;
   }
 
   &--form {
-    padding-top: 30px;
+    padding-top: 96px;
     padding-bottom: 56px;
-    background-position: center -66px;
   }
 }
 
@@ -61,7 +58,7 @@
 
     &--index::before {
       width: auto;
-      height: 685px;
+      height: 729px;
       background: transparent url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom;
 
       @media ($dppx-2) {
@@ -70,15 +67,15 @@
     }
 
     &--photo {
-      padding-top: 70px;
+      padding-top: 180px;
       padding-bottom: 140px;
-      background-position: center -110px;
+      background-position: center top;
     }
 
     &--form {
-      padding-top: 72px;
+      padding-top: 180px;
       padding-bottom: 78px;
-      background-position: center -110px;
+      background-position: center top;
     }
   }
 
@@ -119,7 +116,7 @@
     &--photo {
       padding-top: 280px;
       padding-bottom: 104px;
-      background-position: center top;
+      background-position: center 110px;
 
       .intro__header {
         width: 500px;
@@ -129,7 +126,7 @@
     &--form {
       padding-top: 280px;
       padding-bottom: 102px;
-      background-position: center top;
+      background-position: center 110px;
 
       .intro__header {
         width: 750px;

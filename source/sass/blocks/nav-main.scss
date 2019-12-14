@@ -49,8 +49,8 @@
 .nav-main__toggle {
   position: absolute;
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 60px;
+  height: 30px;
   padding: 0;
   top: 16px;
   right: 18px;
@@ -67,6 +67,7 @@
       content: "";
       width: 30px;
       height: 5px;
+      right: 0;
       background-color: #ffffff;
       border-radius: 1px;
     }
@@ -135,6 +136,7 @@
 
   .nav-main__list {
     box-shadow: none;
+    display: block;
   }
 
   .nav-main__item {
