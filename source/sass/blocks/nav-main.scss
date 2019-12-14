@@ -5,9 +5,18 @@
 
 .nav-main__list {
   @include reset-list;
-  display: flex;
+
+  display: none;
   flex-wrap: wrap;
   box-shadow: 0 -1px 0 0 #000000;
+
+  &--open {
+    display: flex;
+  }
+
+  &--close {
+    display: none;
+  }
 }
 
 .nav-main__item {
@@ -50,34 +59,61 @@
   background-color: transparent;
   cursor: pointer;
 
-  &::before,
-  &::after {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 5px;
-    background-color: #ffffff;
-    border-radius: 1px;
+  &--open {
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 5px;
+      background-color: #ffffff;
+      border-radius: 1px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $color-main;
+    }
+
+    &:active::before,
+    &:active::after {
+      opacity: 0.3;
+      background-color: $color-main;
+    }
   }
 
-  &::before {
-    transform: rotate(45deg);
-  }
+  &--close {
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      right: 0;
+      width: 50px;
+      height: 4px;
+      background-color: #ffffff;
+      border-radius: 1px;
+      box-shadow: 0 -10px 0 0 #ffffff, 0 10px 0 0 #ffffff;
+    }
 
-  &::after {
-    transform: rotate(-45deg);
-  }
+    &:hover::before {
+      background-color: $color-main;
+      box-shadow: 0 -10px 0 0 $color-main, 0 10px 0 0 $color-main;
+    }
 
-  &:hover::before,
-  &:hover::after {
-    background-color: $color-main;
-  }
-
-  &:active::before,
-  &:active::after {
-    opacity: 0.3;
-    background-color: $color-main;
+    &:active::before {
+      opacity: 0.3;
+      background-color: $color-main;
+      box-shadow: 0 -10px 0 0 $color-main, 0 10px 0 0 $color-main;
+    }
   }
 }
 
