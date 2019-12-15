@@ -87,6 +87,11 @@
   &:active {
     background-color: $color-main;
   }
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
+  }
 }
 
 .upload-form__input-tool {
