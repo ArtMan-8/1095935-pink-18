@@ -37,6 +37,11 @@
 
   @include text(24px, 300, normal, $color-main);
 
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
+  }
+
   &--mail:hover {
     color: $color-main-text;
     text-decoration: underline;
@@ -62,9 +67,8 @@
     content: "";
     height: 33px;
     width: 100%;
-
     background: url("../img/svg/bg-triangle-white-footer.svg") no-repeat center top / auto 33px;
-    z-index: 10;
+    z-index: 5;
   }
 
   iframe {

@@ -12,6 +12,11 @@
 .page-footer__logo-link {
   margin-bottom: 34px;
   cursor: pointer;
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
+  }
 }
 
 .page-footer__logo-svg {

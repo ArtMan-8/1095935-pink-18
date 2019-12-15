@@ -1,3 +1,13 @@
+@keyframes modal-open {
+  from {
+    margin-top: -1500px;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
 .modal-ups {
   position: fixed;
   top: 0;
@@ -19,6 +29,7 @@
 
   &--open {
     display: flex;
+    animation: modal-open 0.7s ease;
   }
 }
 
@@ -66,6 +77,11 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
   }
 }
 

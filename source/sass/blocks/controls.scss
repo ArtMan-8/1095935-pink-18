@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0;
 }
 
 .controls__toggle {
@@ -36,10 +37,66 @@
     opacity: 0.1;
   }
 
+  &:focus::before {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
+  }
+
+  &:focus::after {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
+  }
+
   &--current::before {
     box-sizing: content-box;
     border: 3px solid $color-main-text;
     opacity: 1;
     background-color: #ffffff;
+  }
+
+  .controls__arrow {
+    display: none;
+  }
+}
+
+/*   desktop version   */
+
+@media ($mq-desktop) {
+  .controls__toggle {
+    display: none;
+  }
+
+  .controls__arrow {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 41px;
+    top: 200px;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &--left {
+      left: 10px;
+      background: transparent url("../img/svg/icon-review-arrow-left.svg") no-repeat center;
+    }
+
+    &--right {
+      right: 10px;
+      background: transparent url("../img/svg/icon-review-arrow-right.svg") no-repeat center;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
+    &:focus {
+      box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+      outline: none;
+    }
   }
 }

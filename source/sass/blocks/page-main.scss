@@ -8,10 +8,6 @@
   @include text(14px, 400, 30px, $color-main-text);
 }
 
-.page-main__invite-fill {
-  display: none;
-}
-
 /*   tablet version   */
 
 @media ($mq-tablet) {
@@ -20,18 +16,15 @@
     font-size: 18px;
     padding-top: 92px;
   }
-
-  .page-main__invite-fill {
-    display: inline-block;
-    margin: 0;
-    text-align: center;
-    font-size: 18px;
-  }
 }
 
 /*   desktop version   */
 
 @media ($mq-desktop) {
+  .page-main {
+    padding-top: 1px;
+  }
+
   .page-main__text {
     width: 600px;
     font-size: 18px;

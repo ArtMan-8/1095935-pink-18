@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 180px;
-  margin-bottom: 30px;
+  margin: 0 30px 30px;
 }
 
 .social__link {
@@ -12,6 +12,7 @@
   height: 46px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
+  font-size: 0;
 
   display: flex;
   justify-content: center;
@@ -26,6 +27,11 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
+  }
 }
 
 /*   tablet version   */
@@ -33,7 +39,8 @@
 @media ($mq-tablet) {
   .social {
     margin-bottom: 0;
-    margin-left: -13px;
+    margin-left: 8px;
+    margin-right: 24px;
   }
 
   .copyright {

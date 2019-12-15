@@ -3,21 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Пинк - приложение для ярких фотографий">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Пинк - отправить фотографию</title>
 
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" sizes="32x32" href="favicon.ico">
-
-  <script>document.createElement( "picture" );</script>
-  <script src="js/picturefill.js" async=""></script>
 </head>
 <body>
   <div style="display: none">
     <include src="build/img/svg/sprite.svg"></include>
   </div>
 
-  <header class="page-header">
+  <header class="page-header page-header--menu-open">
     <div class="page-header__inner">
       <a class="page-header__logo-link" href="index.html" aria-label="Сайт приложения Пинк">
         <svg class="page-header__logo-svg page-header__logo-svg--mobile" width="75" height="23" viewBox="0 0 74.426 22.859" role="img">
@@ -32,14 +30,14 @@
       </a>
 
       <nav class="page-header__nav nav-main">
-        <ul class="nav-main__list">
+        <button class="nav-main__toggle no-js" type="button" aria-label="Открыть меню">меню</button>
+
+        <ul class="nav-main__list nav-main__list--open">
           <li class="nav-main__item"><a class="nav-main__link" href="index.html">Главная</a></li>
           <li class="nav-main__item"><a class="nav-main__link" href="photo.html">Фотографии</a></li>
           <li class="nav-main__item nav-main__item--current"><a class="nav-main__link">Конкурс</a></li>
-          <li class="nav-main__item"><a class="nav-main__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a></li>
+          <li class="nav-main__item"><a class="nav-main__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer">HTML Academy</a></li>
         </ul>
-
-        <button class="nav-main__toggle no-js" type="button">меню</button>
       </nav>
     </div>
   </header>
@@ -63,11 +61,11 @@
         <ul class="history-form__user-list">
           <li class="history-form__user-item">
             <label for="userSurname" class="history-form__label-user">Фамилия:</label>
-            <input id="userSurname" class="history-form__input-user" type="text" name="user-surname" required="" placeholder="Укажите фамилию *">
+            <input id="userSurname" class="history-form__input-user" type="text" name="user-surname" placeholder="Укажите фамилию *" required>
           </li>
           <li class="history-form__user-item">
             <label for="userName" class="history-form__label-user">Имя:</label>
-            <input id="userName" class="history-form__input-user" type="text" name="user-name" required="" placeholder="Введите ваше имя *">
+            <input id="userName" class="history-form__input-user" type="text" name="user-name" placeholder="Введите ваше имя *" required>
           </li>
           <li class="history-form__user-item">
             <label for="userPatronymic" class="history-form__label-user">Отчество:</label>
@@ -120,7 +118,7 @@
           <li class="history-form__contacts-item">
             <label for="contactsEmail" class="history-form__label-contacts">Адрес почты</label>
             <div class="history-form__for-pseudo history-form__for-pseudo--email">
-              <input id="contactsEmail" class="history-form__input-contacts" type="email" name="contacts-email" placeholder="Введите почту *" title="Введите почту" required="">
+              <input id="contactsEmail" class="history-form__input-contacts" type="email" name="contacts-email" placeholder="Введите почту *" title="Введите почту" required>
             </div>
           </li>
         </ul>
@@ -159,7 +157,7 @@
   </main>
 
   <footer class="page-footer">
-    <a href="index.html" class="page-footer__logo-link">
+    <a href="index.html" class="page-footer__logo-link" aria-label="Сайт приложения Пинк">
       <svg class="page-footer__logo-svg page-footer__logo-svg--mobile" width="147" height="41" viewBox="0 0 146.3 40.375" role="img">
         <use xlink:href="#sp-logo-pink-blue-mobile"></use>
       </svg>
@@ -169,17 +167,17 @@
     </a>
 
     <div class="social">
-      <a href="#" class="social__link social__link--twitter">
+      <a href="#!" class="social__link social__link--twitter">Пинк в твиттер
         <svg class="social__icon social__icon--twitter" xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 17.5 14.663">
           <use xlink:href="#sp-icon-twitter"></use>
         </svg>
       </a>
-      <a href="#" class="social__link social__link--facebook">
+      <a href="#!" class="social__link social__link--facebook">Пинк в фейсбук
         <svg class="social__icon social__icon--facebook" xmlns="http://www.w3.org/2000/svg" width="9" height="19" viewBox="0 0 8.673 18.944">
           <use xlink:href="#sp-icon-facebook"></use>
         </svg>
       </a>
-      <a href="#" class="social__link social__link--youtube">
+      <a href="#!" class="social__link social__link--youtube">Пинк в ютуб
         <svg class="social__icon social__icon--youtube" xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 14.64 13.96">
           <use xlink:href="#sp-icon-youtube"></use>
         </svg>
@@ -188,7 +186,7 @@
 
     <div class="copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer">HTML Academy
         <svg class="copyright__link-svg" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
           <use xlink:href="#sp-logo-htmlacademy"></use>
         </svg>
@@ -219,5 +217,8 @@
       </div>
     </div>
   </div>
+
+  <script src="js/menu.js" async></script>
+  <script src="js/modal-ups.js" async></script>
 </body>
 </html>

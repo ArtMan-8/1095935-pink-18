@@ -10,6 +10,12 @@
 
 .copyright__link {
   padding-top: 6px;
+  font-size: 0;
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
+  }
 }
 
 .copyright__link-svg {

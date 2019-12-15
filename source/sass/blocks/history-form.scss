@@ -1,7 +1,6 @@
 .history-form {
   display: flex;
   flex-direction: column;
-
   margin: auto;
 }
 
@@ -155,6 +154,11 @@
   background: #ffffff url("../img/svg/icon-yes.svg") no-repeat center;
 }
 
+.history-form__input-achievement:focus + .history-form__label-achievement {
+  box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+  outline: none;
+}
+
 .history-form__input-app:checked + .history-form__label-app::after {
   position: absolute;
   display: block;
@@ -165,6 +169,11 @@
   height: 15px;
   border-radius: 50%;
   background-color: $color-main;
+}
+
+.history-form__input-app:focus + .history-form__label-app {
+  box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+  outline: none;
 }
 
 .history-form__input-review {
@@ -218,6 +227,11 @@
     color: rgba(255, 255, 255, 0.3);
     border-color: #1c9b5e;
     background-color: #1c9b5e;
+  }
+
+  &:focus {
+    box-shadow: 5px 5px 3px 0 $color-main, -5px -5px 3px 0 $color-main;
+    outline: none;
   }
 
   &:disabled {
@@ -409,11 +423,13 @@
     margin-top: 27px;
     margin-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .history-form__submit {
     width: 300px;
+    flex-shrink: 0;
   }
 }
 
