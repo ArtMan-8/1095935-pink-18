@@ -423,11 +423,13 @@
     margin-top: 27px;
     margin-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .history-form__submit {
     width: 300px;
+    flex-shrink: 0;
   }
 }
 

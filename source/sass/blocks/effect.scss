@@ -64,6 +64,7 @@
   .effect__description,
   .effect__link {
     @include text(14px, 400, 24px, $color-main-text);
+    display: block;
     margin-top: 0;
   }
 
