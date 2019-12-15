@@ -16,6 +16,15 @@
     font-size: 18px;
     padding-top: 92px;
   }
+
+  .page-main__wrapper {
+    width: 94vw;
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 /*   desktop version   */
@@ -32,5 +41,10 @@
 
   .page-main__offer--form .page-main__text {
     width: 800px;
+  }
+
+  .page-main__wrapper {
+    width: 98vw;
+    max-width: 1000px;
   }
 }

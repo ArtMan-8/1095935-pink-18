@@ -114,15 +114,6 @@
 /*   tablet version   */
 
 @media ($mq-tablet) {
-  .article__wrapper {
-    width: 94vw;
-    max-width: 750px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .article {
     width: 300px;
     margin: 0;
@@ -212,11 +203,6 @@
 /*   desktop version   */
 
 @media ($mq-desktop) {
-  .article__wrapper {
-    width: 98vw;
-    max-width: 1000px;
-  }
-
   .article {
     margin-bottom: 54px;
 
