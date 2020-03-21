@@ -1,4 +1,4 @@
-# Личный проект «Седона»
+# Личный проект «Седона» [![Build Status](https://travis-ci.com/artman-training-projects/htmlacademy-pink-18.svg?branch=master)](https://travis-ci.com/artman-training-projects/htmlacademy-pink-18)
 * Студент: [Владимир Артюхов](https://up.htmlacademy.ru/htmlcss/26/user/1095935).
 * Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
